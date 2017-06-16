@@ -1,0 +1,171 @@
+/*
+ ADOBE CONFIDENTIAL
+ __________________
+
+  Copyright 2015 Adobe Systems Incorporated
+  All Rights Reserved.
+
+ NOTICE:  All information contained herein is, and remains
+ the property of Adobe Systems Incorporated and its suppliers,
+ if any.  The intellectual and technical concepts contained
+ herein are proprietary to Adobe Systems Incorporated and its
+ suppliers and are protected by trade secret or copyright law.
+ Dissemination of this information or reproduction of this material
+ is strictly forbidden unless prior written permission is obtained
+ from Adobe Systems Incorporated.
+ */
+
+.rating {
+    float:left;
+}
+
+.rating:not(:checked) > input {
+    clip: rect(0px, 0px, 0px, 0px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.rating:not(:checked) > label {
+    float: right;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 3em;
+    line-height: 1.2;
+    color: #ddd;
+    text-shadow: 1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:before {
+    content: '★';
+}
+
+.rating > input:checked ~ label {
+    color: #ea5d23;
+    text-shadow: 1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: #ea5d23;
+    text-shadow: 1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: #ea5d23;
+    text-shadow: 1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > label:active {
+    top: 2px;
+    left: 2px;
+}
+
+.review-action-button#reset {
+    margin-bottom: 20px;
+    min-width: 100px;
+    min-height: 35px;
+    color: #ffffff;
+    font-size:1.05em;
+    background:  #ced0cf;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+.review-action-button#post {
+    margin-bottom: 20px;
+    min-width: 100px;
+    min-height: 35px;
+    color: #ffffff;
+    font-size:1.05em;
+    background:  #ea5d23;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+.ratings-bar-empty {
+    width: 90px;
+    cursor: pointer;
+    background-image: url("../img/ratings_star_selected_empty.png");
+}
+
+.ratings-bar-full {
+    background-image: url("../img/ratings_star_selected.png");
+}
+
+.ratings-bar {
+    background-repeat: repeat-x;
+    height: 18px;
+}
+
+.ratings-star {
+    float: left;
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+}
+
+.ratings-bar[data-rating-shown^='0'] {
+    width: 0px;
+    cursor: pointer;
+}
+
+.ratings-bar[data-rating-shown^='1'] {
+    width: 18px;
+    cursor: pointer;
+}
+
+.ratings-bar[data-rating-shown^='2'] {
+    width: 36px;
+    cursor: pointer;
+}
+
+.ratings-bar[data-rating-shown^='3'] {
+    width: 54px;
+    cursor: pointer;
+}
+
+.ratings-bar[data-rating-shown^='4'] {
+    width: 72px;
+    cursor: pointer;
+}
+
+.ratings-bar[data-rating-shown^='5'] {
+    width: 90px;
+    cursor: pointer;
+}
+
+.ratings-block {
+    margin: 0 20px 0 0;
+}
+.ratings-block ul{
+    padding: 0 0 0 0;
+}
+.ratings-block ul li{
+    height:18px;
+    list-style-type:none;
+}
+.ratings-block ul li div{
+    float:left;
+}
+.ratings-block ul li div div{
+    float:left;
+}
+/* Override textarea styles */
+.topcoat-textarea--large {
+    height: 6em;
+    font-size: 16px;
+    line-height: 1.25rem;
+    padding: 0 1rem;
+    width: 85%;
+}

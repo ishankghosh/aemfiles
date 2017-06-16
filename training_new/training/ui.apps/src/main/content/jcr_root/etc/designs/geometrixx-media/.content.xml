@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <clientlibs/>
+    <jcr:content
+        cq:lastModified="{Date}2013-12-11T00:48:55.443-08:00"
+        cq:lastModifiedBy="admin"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Geometrixx Media Design"
+        sling:resourceType="wcm/core/components/designer">
+        <media-home jcr:primaryType="nt:unstructured">
+            <grid-12-par
+                jcr:lastModified="{Date}2012-10-19T17:21:07.179-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"
+                components="[/libs/wcm/foundation/components/responsivegrid,/libs/foundation/components/image,/libs/foundation/components/adaptiveimage,/libs/foundation/components/list,/libs/foundation/components/text,/libs/foundation/components/textimage,/libs/foundation/components/title,group:Geometrixx Media,/libs/dam/cfm/components/contentfragment]">
+                <cq:authoring jcr:primaryType="nt:unstructured">
+                    <assetToComponentMapping jcr:primaryType="nt:unstructured">
+                        <image
+                            jcr:primaryType="nt:unstructured"
+                            assetGroup="media"
+                            assetMimetype="image/*"
+                            droptarget="image"
+                            resourceType="foundation/components/adaptiveimage"
+                            type="Images"/>
+                        <manuscript
+                            jcr:primaryType="nt:unstructured"
+                            assetGroup="media"
+                            assetMimetype="text/plain"
+                            droptarget="file"
+                            resourceType="media/articles/components/article"
+                            type="Images"/>
+                        <fragment
+                            jcr:primaryType="nt:unstructured"
+                            assetGroup="media"
+                            assetMimetype="text/html"
+                            droptarget="fragment"
+                            resourceType="dam/cfm/components/contentfragment"
+                            type="Content Fragment"/>
+                    </assetToComponentMapping>
+                </cq:authoring>
+                <section jcr:primaryType="nt:unstructured"/>
+            </grid-12-par>
+            <grid-4-par
+                jcr:lastModified="{Date}2012-09-14T13:19:06.382+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"
+                columns="4"
+                components="[/libs/wcm/foundation/components/responsivegrid,/libs/foundation/components/image,/libs/foundation/components/adaptiveimage,/libs/foundation/components/list,/libs/foundation/components/text,/libs/foundation/components/textimage,/libs/foundation/components/title,group:Geometrixx Media,/libs/dam/cfm/components/contentfragment]">
+                <cq:authoring jcr:primaryType="nt:unstructured">
+                    <assetToComponentMapping jcr:primaryType="nt:unstructured">
+                        <image
+                            jcr:primaryType="nt:unstructured"
+                            assetGroup="media"
+                            assetMimetype="image/*"
+                            droptarget="image"
+                            resourceType="foundation/components/adaptiveimage"
+                            type="Images"/>
+                        <manuscript
+                            jcr:primaryType="nt:unstructured"
+                            assetGroup="media"
+                            assetMimetype="text/plain"
+                            droptarget="file"
+                            resourceType="media/articles/components/article"
+                            type="Images"/>
+                        <fragment
+                            jcr:primaryType="nt:unstructured"
+                            assetGroup="media"
+                            assetMimetype="text/html"
+                            droptarget="fragment"
+                            resourceType="dam/cfm/components/contentfragment"
+                            type="Content Fragment"/>
+                    </assetToComponentMapping>
+                </cq:authoring>
+                <section jcr:primaryType="nt:unstructured"/>
+            </grid-4-par>
+            <grid-8-par
+                jcr:lastModified="{Date}2012-09-13T17:15:15.192+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"
+                columns="8"
+                components="[/libs/wcm/foundation/components/responsivegrid,/libs/foundation/components/image,/libs/foundation/components/adaptiveimage,/libs/foundation/components/list,/libs/foundation/components/text,/libs/foundation/components/textimage,/libs/foundation/components/title,group:Geometrixx Media,/libs/dam/cfm/components/contentfragment]">
+                <cq:authoring jcr:primaryType="nt:unstructured">
+                    <assetToComponentMapping jcr:primaryType="nt:unstructured">
+                        <image
+                            jcr:primaryType="nt:unstructured"
+                            assetGroup="media"
+                            assetMimetype="image/*"
+                            droptarget="image"
+                            resourceType="foundation/components/adaptiveimage"
+                            type="Images"/>
+                        <manuscript
+                            jcr:primaryType="nt:unstructured"
+                            assetGroup="media"
+                            assetMimetype="text/plain"
+                            droptarget="file"
+                            resourceType="media/articles/components/article"
+                            type="Images"/>
+                        <fragment
+                            jcr:primaryType="nt:unstructured"
+                            assetGroup="media"
+                            assetMimetype="text/html"
+                            droptarget="fragment"
+                            resourceType="dam/cfm/components/contentfragment"
+                            type="Content Fragment"/>
+                    </assetToComponentMapping>
+                </cq:authoring>
+                <section jcr:primaryType="nt:unstructured"/>
+            </grid-8-par>
+            <page-title
+                jcr:lastModified="{Date}2012-08-13T16:39:33.748-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/iparsys"
+                components="[/libs/foundation/components/image,/libs/foundation/components/title]"
+                defaultType="large">
+                <section jcr:primaryType="nt:unstructured"/>
+            </page-title>
+            <footer-logo
+                jcr:lastModified="{Date}2012-10-02T13:02:01.030-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/logo"
+                imageRotate="0"
+                maxWidth="238">
+                <image/>
+            </footer-logo>
+        </media-home>
+        <page jcr:primaryType="nt:unstructured">
+            <logo
+                jcr:lastModified="{Date}2010-08-19T18:23:43.667+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/logo"
+                div_x0020_img.margin="0"
+                imageRotate="0">
+                <image/>
+            </logo>
+            <feeds
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="geometrixx-media/components/feeds"
+                feeds="/content/geometrixx-media/en/toolbar/feeds"/>
+            <forum
+                jcr:primaryType="nt:unstructured"
+                postresourcetype="geometrixx-media/components/social/forum/components/post"
+                topicresourcetype="geometrixx-media/components/social/forum/components/topic"/>
+            <userinfo
+                jcr:lastModified="{Date}2010-09-29T14:35:32.984+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/userinfo"/>
+            <footer-logo
+                jcr:lastModified="{Date}2012-10-02T13:02:01.030-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/logo"
+                imageRotate="0"
+                maxWidth="238">
+                <image/>
+            </footer-logo>
+        </page>
+        <article jcr:primaryType="nt:unstructured">
+            <article-content-par
+                jcr:lastModified="{Date}2012-11-28T18:38:28.687-08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"
+                columns="8"
+                components="[/libs/wcm/foundation/components/responsivegrid,/libs/foundation/components/image,/libs/foundation/components/adaptiveimage,/libs/foundation/components/list,/libs/foundation/components/text,/libs/foundation/components/textimage,/libs/foundation/components/title,group:Geometrixx Media,/libs/social/commons/components/hbs/comments,/libs/dam/cfm/components/contentfragment]">
+                <cq:authoring jcr:primaryType="nt:unstructured">
+                    <assetToComponentMapping jcr:primaryType="nt:unstructured">
+                        <image
+                            jcr:primaryType="nt:unstructured"
+                            assetGroup="media"
+                            assetMimetype="image/*"
+                            droptarget="image"
+                            resourceType="foundation/components/adaptiveimage"
+                            type="Images"/>
+                        <manuscript
+                            jcr:primaryType="nt:unstructured"
+                            assetGroup="media"
+                            assetMimetype="text/plain"
+                            droptarget="file"
+                            resourceType="media/articles/components/article"
+                            type="Images"/>
+                        <fragment
+                            jcr:primaryType="nt:unstructured"
+                            assetGroup="media"
+                            assetMimetype="text/html"
+                            droptarget="fragment"
+                            resourceType="dam/cfm/components/contentfragment"
+                            type="Content Fragment"/>
+                    </assetToComponentMapping>
+                </cq:authoring>
+                <section jcr:primaryType="nt:unstructured"/>
+            </article-content-par>
+            <right-panel-par
+                jcr:lastModified="{Date}2012-10-17T16:56:03.461-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"
+                columns="4"
+                components="[/libs/wcm/foundation/components/responsivegrid,/libs/foundation/components/text,/libs/foundation/components/textimage,/libs/foundation/components/title,group:Geometrixx Media,/libs/dam/cfm/components/contentfragment]">
+                <cq:authoring jcr:primaryType="nt:unstructured">
+                    <assetToComponentMapping jcr:primaryType="nt:unstructured">
+                        <manuscript
+                            jcr:primaryType="nt:unstructured"
+                            assetGroup="media"
+                            assetMimetype="text/plain"
+                            droptarget="file"
+                            resourceType="media/articles/components/article"
+                            type="Images"/>
+                        <fragment
+                            jcr:primaryType="nt:unstructured"
+                            assetGroup="media"
+                            assetMimetype="text/html"
+                            droptarget="fragment"
+                            resourceType="dam/cfm/components/contentfragment"
+                            type="Content Fragment"/>
+                    </assetToComponentMapping>
+                </cq:authoring>
+                <section jcr:primaryType="nt:unstructured"/>
+            </right-panel-par>
+        </article>
+        <category jcr:primaryType="nt:unstructured">
+            <grid-8-par
+                jcr:lastModified="{Date}2012-12-11T10:28:10.623+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"
+                columns="8"
+                components="[/libs/wcm/foundation/components/responsivegrid,/libs/foundation/components/image,/libs/foundation/components/adaptiveimage,/libs/foundation/components/list,/libs/foundation/components/text,/libs/foundation/components/textimage,/libs/foundation/components/title,group:Geometrixx Media,/libs/social/commons/components/hbs/comments,/libs/dam/cfm/components/contentfragment]">
+                <cq:authoring jcr:primaryType="nt:unstructured">
+                    <assetToComponentMapping jcr:primaryType="nt:unstructured">
+                        <image
+                            jcr:primaryType="nt:unstructured"
+                            assetGroup="media"
+                            assetMimetype="image/*"
+                            droptarget="image"
+                            resourceType="foundation/components/adaptiveimage"
+                            type="Images"/>
+                        <manuscript
+                            jcr:primaryType="nt:unstructured"
+                            assetGroup="media"
+                            assetMimetype="text/plain"
+                            droptarget="file"
+                            resourceType="media/articles/components/article"
+                            type="Images"/>
+                        <fragment
+                            jcr:primaryType="nt:unstructured"
+                            assetGroup="media"
+                            assetMimetype="text/html"
+                            droptarget="fragment"
+                            resourceType="dam/cfm/components/contentfragment"
+                            type="Content Fragment"/>
+                    </assetToComponentMapping>
+                </cq:authoring>
+                <section jcr:primaryType="nt:unstructured"/>
+            </grid-8-par>
+            <grid-4-par
+                jcr:lastModified="{Date}2012-09-14T13:19:06.382+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"
+                columns="4"
+                components="[/libs/wcm/foundation/components/responsivegrid,/libs/foundation/components/image,/libs/foundation/components/adaptiveimage,/libs/foundation/components/list,/libs/foundation/components/text,/libs/foundation/components/textimage,/libs/foundation/components/title,group:Geometrixx Media,/libs/dam/cfm/components/contentfragment]">
+                <cq:authoring jcr:primaryType="nt:unstructured">
+                    <assetToComponentMapping jcr:primaryType="nt:unstructured">
+                        <image
+                            jcr:primaryType="nt:unstructured"
+                            assetGroup="media"
+                            assetMimetype="image/*"
+                            droptarget="image"
+                            resourceType="foundation/components/adaptiveimage"
+                            type="Images"/>
+                        <manuscript
+                            jcr:primaryType="nt:unstructured"
+                            assetGroup="media"
+                            assetMimetype="text/plain"
+                            droptarget="file"
+                            resourceType="media/articles/components/article"
+                            type="Images"/>
+                        <fragment
+                            jcr:primaryType="nt:unstructured"
+                            assetGroup="media"
+                            assetMimetype="text/html"
+                            droptarget="fragment"
+                            resourceType="dam/cfm/components/contentfragment"
+                            type="Content Fragment"/>
+                    </assetToComponentMapping>
+                </cq:authoring>
+                <section jcr:primaryType="nt:unstructured"/>
+            </grid-4-par>
+        </category>
+        <community jcr:primaryType="nt:unstructured">
+            <grid-8-par
+                jcr:lastModified="{Date}2013-12-10T22:59:10.247-08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"
+                columns="8"
+                components="[/libs/wcm/foundation/components/responsivegrid,/libs/foundation/components/adaptiveimage,/libs/foundation/components/image,/libs/foundation/components/list,/libs/foundation/components/text,/libs/foundation/components/textimage,/libs/foundation/components/title,group:Geometrixx Media,group:Scoring,/libs/social/commons/components/hbs/comments,/libs/dam/cfm/components/contentfragment]">
+                <forum
+                    jcr:lastModified="{Date}2013-12-11T00:48:55.433-08:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="geometrixx-media/components/social/forum/components/hbs/forum"
+                    postresourcetype="geometrixx-media/components/social/forum/components/hbs/post"
+                    topicresourcetype="geometrixx-media/components/social/forum/components/hbs/topic"
+                    votingresourcetype="geometrixx-media/components/social/forum/components/hbs/voting"
+                    votingRoot="voting"/>
+                <cq:authoring jcr:primaryType="nt:unstructured">
+                    <assetToComponentMapping jcr:primaryType="nt:unstructured">
+                        <image
+                            jcr:primaryType="nt:unstructured"
+                            assetGroup="media"
+                            assetMimetype="image/*"
+                            droptarget="image"
+                            resourceType="foundation/components/adaptiveimage"
+                            type="Images"/>
+                        <manuscript
+                            jcr:primaryType="nt:unstructured"
+                            assetGroup="media"
+                            assetMimetype="text/plain"
+                            droptarget="file"
+                            resourceType="media/articles/components/article"
+                            type="Images"/>
+                        <fragment
+                            jcr:primaryType="nt:unstructured"
+                            assetGroup="media"
+                            assetMimetype="text/html"
+                            droptarget="fragment"
+                            resourceType="dam/cfm/components/contentfragment"
+                            type="Content Fragment"/>
+                    </assetToComponentMapping>
+                </cq:authoring>
+                <section jcr:primaryType="nt:unstructured"/>
+            </grid-8-par>
+            <grid-4-par
+                jcr:lastModified="{Date}2012-09-14T13:19:06.382+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"
+                columns="4"
+                components="[/libs/wcm/foundation/components/responsivegrid,/libs/foundation/components/image,/libs/foundation/components/adaptiveimage,/libs/foundation/components/list,/libs/foundation/components/text,/libs/foundation/components/textimage,/libs/foundation/components/title,group:Geometrixx Media,/libs/dam/cfm/components/contentfragment]">
+                <cq:authoring jcr:primaryType="nt:unstructured">
+                    <assetToComponentMapping jcr:primaryType="nt:unstructured">
+                        <image
+                            jcr:primaryType="nt:unstructured"
+                            assetGroup="media"
+                            assetMimetype="image/*"
+                            droptarget="image"
+                            resourceType="foundation/components/adaptiveimage"
+                            type="Images"/>
+                        <manuscript
+                            jcr:primaryType="nt:unstructured"
+                            assetGroup="media"
+                            assetMimetype="text/plain"
+                            droptarget="file"
+                            resourceType="media/articles/components/article"
+                            type="Images"/>
+                        <fragment
+                            jcr:primaryType="nt:unstructured"
+                            assetGroup="media"
+                            assetMimetype="text/html"
+                            droptarget="fragment"
+                            resourceType="dam/cfm/components/contentfragment"
+                            type="Content Fragment"/>
+                    </assetToComponentMapping>
+                </cq:authoring>
+                <section jcr:primaryType="nt:unstructured"/>
+            </grid-4-par>
+        </community>
+        <edit jcr:primaryType="nt:unstructured">
+            <user-badge
+                jcr:lastModified="{Date}2013-12-05T15:30:58.898-07:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="geometrixx-media/components/badgelist"
+                mappings="[/etc/segmentation/badges/gold#gold,/etc/segmentation/badges/silver#silver,/etc/segmentation/badges/bronze#bronze]"
+                moderatorGroup="/home/groups/geometrixx/communities/hiking-admins"/>
+        </edit>
+        <self jcr:primaryType="nt:unstructured">
+            <user-badge
+                jcr:lastModified="{Date}2013-12-05T15:36:47.633-07:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="geometrixx-media/components/badgelist"
+                mappings="[/etc/segmentation/badges/gold#gold,/etc/segmentation/badges/silver#silver,/etc/segmentation/badges/bronze#bronze]"
+                moderatorGroup="/home/groups/geometrixx/communities/hiking-admins"/>
+        </self>
+    </jcr:content>
+    <clientlibs-all/>
+    <feeds/>
+    <images/>
+</jcr:root>

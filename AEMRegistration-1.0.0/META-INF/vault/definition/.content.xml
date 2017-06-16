@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:vlt="http://www.day.com/jcr/vault/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:created="{Date}2017-06-16T16:05:14.905+05:30"
+    jcr:createdBy="admin"
+    jcr:description=""
+    jcr:lastModified="{Date}2017-06-16T16:05:14.905+05:30"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="vlt:PackageDefinition"
+    buildCount="1"
+    builtWith="Adobe Experience Manager-6.2.0"
+    fixedBugs=""
+    group="my_packages"
+    lastUnwrapped="{Date}2017-06-16T16:05:14.905+05:30"
+    lastUnwrappedBy="admin"
+    lastWrapped="{Date}2017-06-16T16:05:14.905+05:30"
+    lastWrappedBy="admin"
+    name="AEMRegistration"
+    testedWith=""
+    version="1.0.0">
+    <filter jcr:primaryType="nt:unstructured">
+        <f0
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/apps/custom_submit_action"
+            rules="[]"/>
+        <f1
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/content/thankyou"
+            rules="[]"/>
+        <f2
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/content/forms/af/RegistrationDemo"
+            rules="[]"/>
+    </filter>
+</jcr:root>

@@ -1,0 +1,55 @@
+/*
+ *
+ * ADOBE CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright 2014 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ */
+ 
+/*
+ *
+ * Some scf components include bootstrap and bring it along
+ * when included on a site. If the site itself is not
+ * using bootstrap then this site's UI may be affected
+ * by some of the more intrusive bootsrap rules.
+ * If that happens we can override those rules here
+ * and restore things to the original state.
+ */
+ 
+/*
+ *
+ * For sites that use bootstrap 3 or later these overrides
+ * will need to be removed or disabled
+ */
+ 
+/*
+ *
+ * Bootstrap resets all box-sizing for all elements
+ * to border-box which will break most elements
+ * that have width or height and paddings set while
+ * using default box-sizing (which is content-box).
+ * Next 2 rules reset box-sizing back to content-box for 
+ * all elements except the ones in scf components
+ */
+
+* {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+[class^="scf"] * {
+    -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}

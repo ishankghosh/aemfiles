@@ -1,0 +1,45 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1497602895375
+Build-Jdk: 1.8.0_25
+Built-By: isghosh
+Bundle-Description: Core bundle for AEM
+Bundle-ManifestVersion: 2
+Bundle-Name: AEM - Core
+Bundle-SymbolicName: org.aem.training.core
+Bundle-Version: 0.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.aem.training.core.filters;version="0.0.1";uses:="jav
+ ax.servlet",org.aem.training.core.listeners;version="0.0.1";uses:="org.
+ osgi.service.event",org.aem.training.core;version="1.0",org.aem.trainin
+ g.core.schedulers;version="0.0.1",org.aem.training.core.servlets;versio
+ n="0.0.1";uses:="javax.servlet,org.apache.sling.api,org.apache.sling.ap
+ i.servlets,org.slf4j"
+Import-Package: com.mongodb;version="[2.10,3)",javax.jcr;version="[2.0,3
+ )",javax.servlet,org.apache.sling.api;version="[2.3,3)",org.apache.slin
+ g.api.request;version="[2.4,3)",org.apache.sling.api.resource;version="
+ [2.5,3)",org.apache.sling.api.servlets;version="[2.1,3)",org.apache.sli
+ ng.commons.json;version="[2.0,3)",org.apache.sling.commons.json.jcr;ver
+ sion="[2.0,3)",org.apache.sling.commons.osgi;version="[2.2,3)",org.osgi
+ .service.event;version="[1.2,2)",org.slf4j;version="[1.5,2)"
+Provide-Capability: osgi.service;effective:=active;objectClass="javax.se
+ rvlet.Servlet";service.vendor=Adobe,osgi.service;effective:=active;obje
+ ctClass="java.lang.Runnable";scheduler.expression="*/30 * * * * ?";sche
+ duler.concurrent=false;service.vendor=Adobe,osgi.service;effective:=act
+ ive;objectClass:List<String>="org.aem.training.core.servlets.HandleForm
+ New,javax.servlet.Servlet,javax.servlet.ServletConfig,java.io.Serializa
+ ble";service.vendor=Adobe,osgi.service;effective:=active;objectClass="j
+ avax.servlet.Filter";service.ranking=-700;sling.filter.scope=REQUEST;se
+ rvice.vendor=Adobe,osgi.service;effective:=active;objectClass="org.osgi
+ .service.event.EventHandler";event.topics="org/apache/sling/api/resourc
+ e/Resource/*";service.vendor=Adobe
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Service-Component: OSGI-INF/org.aem.training.core.filters.LoggingFilter.
+ xml,OSGI-INF/org.aem.training.core.servlets.JsonGenerationServlet.xml,O
+ SGI-INF/org.aem.training.core.servlets.HandleFormNewImp.xml,OSGI-INF/or
+ g.aem.training.core.servlets.SimpleServlet.xml,OSGI-INF/org.aem.trainin
+ g.core.listeners.SimpleResourceListener.xml,OSGI-INF/org.aem.training.c
+ ore.servlets.UserData.xml,OSGI-INF/org.aem.training.core.schedulers.Sim
+ pleScheduledTask.xml,OSGI-INF/org.aem.training.core.servlets.UserDataSe
+ lector.xml
+Sling-Model-Packages: org.aem.training.core
+Tool: Bnd-2.3.0.201405100607

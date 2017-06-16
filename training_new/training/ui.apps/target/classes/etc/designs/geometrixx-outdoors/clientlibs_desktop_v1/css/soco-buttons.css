@@ -1,0 +1,144 @@
+/* Buttons */
+
+/* Default button (grey) */
+.community .page-main .btn,
+.community .page-main button,
+.community .par form .btn,
+.community .par form button,
+.community .par form input[type="button"],
+.community .par form input[type="submit"],
+.community .par form input[type="reset"],
+.community form .form_button_reset,
+.community .par form .form_button_reset {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    border: 0 none;
+    margin: 0;
+    padding: 4px 25px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 14px;
+    background-color: #c3c1c1;
+    background-image: -webkit-gradient(linear, center top, center bottom, from(#c3c1c1), to(#aeadad));
+    background-image: -webkit-linear-gradient(top, #c3c1c1, #aeadad);
+    background-image: -moz-linear-gradient(top, #c3c1c1, #aeadad);
+    background-image: -o-linear-gradient(top, #c3c1c1, #aeadad);
+    background-image: -ms-linear-gradient(top, #c3c1c1, #aeadad);
+    background-image: linear-gradient(to bottom, #c3c1c1, #aeadad);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c3c1c1', endColorstr='#aeadad',GradientType=0 );
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Hover */
+.community .page-main .btn:hover,
+.community .page-main button:hover,
+.community .par form .btn:hover,
+.community .par form button:hover,
+.community .par form .form_button_reset:hover {
+    background-image: -webkit-gradient(linear, center top, center bottom, from(#aeadad), to(#c3c1c1));
+    background-image: -webkit-linear-gradient(top, #aeadad, #c3c1c1);
+    background-image: -moz-linear-gradient(top, #aeadad, #c3c1c1);
+    background-image: -o-linear-gradient(top, #aeadad, #c3c1c1);
+    background-image: -ms-linear-gradient(top, #aeadad, #c3c1c1);
+    background-image: linear-gradient(to bottom, #aeadad, #c3c1c1);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aeadad', endColorstr='#c3c1c1',GradientType=0 );
+}
+
+/* Don't use proprietary filter for greater than ie 8 */
+.community .gt-ie8 .btn,
+.community .gt-ie8 button,
+.community .gt-ie8 .par form .btn:hover,
+.community .gt-ie8 .par form button:hover,
+.community .gt-ie8 .par form input[type="submit"]:hover,
+.community .gt-ie8 .par form input[type="reset"]:hover,
+.community .gt-ie8 .par form .form_button_submit:hover,
+.community .gt-ie8 .par form .form_button_reset:hover {
+    filter: none;
+}
+
+/* last button in row */
+.community .page-main .btn.last,
+.community .page-main button.last,
+.community .par form .btn.last,
+.community .par form button.last,
+.community .par form input[type="submit"].last,
+.community .par form input[type="reset"].last,
+.community .par form .form_button_submit.last,
+.community .par form .form_button_reset.last {
+    margin-right: 0;
+}
+
+/* Anchor buttons */
+.community a.btn,
+.community a.btn:hover,
+.community .btn a,
+.community button a,
+.community button.btn a,
+.community .btn a:hover,
+.community button a:hover,
+.community button.btn a:hover,
+.community .page-content .btn a,
+.community .page-content .btn a:hover,
+.community .page-content div.forum .btn a,
+.community .page-content div.forum .btn a:hover,
+.community .par form .btn a,
+.community .par form .button a:hover,
+.community .par form .button a:active,
+.community .overview.title a.btn,
+.community .overview.title a.btn:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Primary button (orange) */
+.community .page-main .btn.action,
+.community .page-main button.action,
+.community .ui-dialog .ui-dialog-buttonset button,
+.community .par form .btn.action,
+.community .par form button.action,
+.community .par form input[type="button"].action,
+.community .par form input[type="button"],
+.community .comments .submit-block input[type="submit"]
+.community .par form input[type="submit"],
+.community form .form_button_submit,
+.community-landing form .form_button_submit {
+    padding: 4px 10px;
+    background: #BE4B16 url(../../images/soco/button.png) left top repeat-x;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.community .comments .submit-block input[type="submit"] {
+    margin: 5px 0 5px 0;
+}
+
+/* Hover */
+.community .page-main .btn.action:hover,
+.community .page-main button.action:hover,
+.community .par form .btn.action:hover,
+.community .par form button.action:hover,
+.community .par form input[type="submit"]:hover,
+.community form .form_button_submit:hover,
+.community-landing form .form_button_submit:hover,
+.community .par form input[type="button"].action:hover {
+    background: none;
+    background-image: -webkit-gradient(linear, center top, center bottom, from(#c24920), to(#f75e1a));
+    background-image: -webkit-linear-gradient(top, #c24920, #f75e1a);
+    background-image: -moz-linear-gradient(top, #c24920, #f75e1a);
+    background-image: -o-linear-gradient(top, #c24920, #f75e1a);
+    background-image: -ms-linear-gradient(top, #c24920, #f75e1a);
+    background-image: linear-gradient(to bottom, #c24920, #f75e1a);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c24920', endColorstr='#f75e1a',GradientType=0 );
+}

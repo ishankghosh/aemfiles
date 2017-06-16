@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <ng-clientlib-author/>
+    <ng-clientlibsall/>
+    <jcr:content
+        cq:lastModified="{Date}2015-01-13T14:47:56.331-05:00"
+        cq:lastModifiedBy="admin"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Geometrixx Outdoors Phonegap Design"
+        sling:resourceType="wcm/core/components/designer">
+        <ng-geometrixx-page jcr:primaryType="nt:unstructured">
+            <content-par
+                jcr:lastModified="{Date}2013-11-05T16:47:39.312Z"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[group:Geometrixx Outdoors App,group:PhoneGap]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </content-par>
+            <tab-bar
+                jcr:lastModified="{Date}2015-01-13T14:47:56.329-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="geometrixx-outdoors-app/components/angular/ng-geometrixx-page/tab-bar"
+                pages="[/content/phonegap/geometrixx-outdoors/en/home,/content/phonegap/geometrixx-outdoors/en/home/reviews,/content/phonegap/geometrixx-outdoors/en/home/about-us]"/>
+        </ng-geometrixx-page>
+        <ng-geometrixx-starter-page jcr:primaryType="nt:unstructured">
+            <content-par
+                jcr:lastModified="{Date}2013-11-05T16:47:39.312Z"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[group:Geometrixx Outdoors App,group:PhoneGap]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </content-par>
+            <tab-bar
+                jcr:lastModified="{Date}2015-01-13T14:47:56.329-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="geometrixx-outdoors-app/components/angular/ng-geometrixx-page/tab-bar"
+                pages="[]"/>
+        </ng-geometrixx-starter-page>
+    </jcr:content>
+</jcr:root>

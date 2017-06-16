@@ -1,0 +1,5 @@
+#base=.
+#soco-calendar.js
+soco-modal.js
+soco-form-file.js
+config.js

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/org.aem.training.core.servlets.UserData">
+    <OCD id="org.aem.training.core.servlets.UserData" name="%org.aem.training.core.servlets.UserData.name" description="%org.aem.training.core.servlets.UserData.description"/>
+    <Designate pid="org.aem.training.core.servlets.UserData">
+        <Object ocdref="org.aem.training.core.servlets.UserData"/>
+    </Designate>
+</metatype:MetaData>

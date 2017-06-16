@@ -1,0 +1,249 @@
+
+/*
+ ADOBE CONFIDENTIAL
+ __________________
+
+  Copyright 2012 Adobe Systems Incorporated
+  All Rights Reserved.
+
+ NOTICE:  All information contained herein is, and remains
+ the property of Adobe Systems Incorporated and its suppliers,
+ if any.  The intellectual and technical concepts contained
+ herein are proprietary to Adobe Systems Incorporated and its
+ suppliers and are protected by trade secret or copyright law.
+ Dissemination of this information or reproduction of this material
+ is strictly forbidden unless prior written permission is obtained
+ from Adobe Systems Incorporated.
+ */
+
+/* Campaigns - Banners */
+
+.campaign-banner .image {
+    margin-bottom: 0;
+}
+.campaign-banner_mobile {
+    margin: 0 -10px;
+}
+.page-mobile .campaign > .image a > img {
+    margin: 0 auto;
+    max-width: 420px;
+    width: 100% !important;
+    height: auto !important;
+}
+
+/* Campaigns - Color */
+
+.campaign-color {
+    zoom: 1; /* IE7 fix */
+}
+.campaign-color .image {
+    margin-bottom: 0;
+    padding-bottom: 5px;
+}
+.campaign-color .image img {
+    width: 100%;
+    height: 7px;
+}
+
+/* Campaigns - Products */
+
+.campaign-products {
+    margin-bottom: -10px;
+}
+
+.campaign-products-mobile {
+    overflow: auto;
+}
+.campaign-products-mobile > div {
+    width: 620px;
+}
+
+/* Recommendations */
+.product-recommendation {
+    display: inline-block;
+}
+
+.recommendations-viewer .title {
+    margin: 2rem 0 0.5rem;
+    color: #4d4d4d;
+    font-size: 1.25em;
+    font-style: italic;
+    font-weight: normal;
+}
+.recommendations-viewer .title:empty {
+    display: none;
+}
+
+.recommendations-viewer .product-recommendation a.product-recommendation-link {
+    position: relative;
+    display: block;
+    float: left;
+    width: 125px;
+    height: 142px;
+    margin: 0 4px 0 0;
+    padding: 4px 10px;
+    border: 1px solid #d9d9d9;
+    text-decoration: none;
+    color: #5a5a5a;
+}
+
+.page-product .recommendations-viewer .product-recommendation a.product-recommendation-link {
+    width: 128px;
+    height: 145px;
+}
+.page-sidebar .recommendations-viewer .product-recommendation a.product-recommendation-link {
+    width: 110px;
+    height: 126px;
+}
+
+.recommendations-viewer .product-recommendation a:hover {
+    z-index: 1;
+    border-color: #007cba;
+    color: #007cba;
+}
+
+.recommendations-viewer .product-recommendation .product-recommendation-image {
+    display: table-cell;
+    height: 88px;
+    vertical-align: middle;
+}
+
+
+
+/*
+ * HTML5 Boilerplate helper classes
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+.hidden:not(.section) {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/* Additional helper classes */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+.hidden:not(.section) {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+.no-float { float: none !important; }
+.float-right { float: right !important; }
+.float-left { float: left !important; }

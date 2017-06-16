@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/aemform"/>
+    <filter root="/content/thankyou"/>
+    <filter root="/content/forms/af/Signup"/>
+    <filter root="/apps/custom_submit_action"/>
+</workspaceFilter>

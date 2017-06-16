@@ -1,0 +1,3617 @@
+/*
+ * FullCalendar v1.5.4 Stylesheet
+ *
+ * Copyright (c) 2011 Adam Shaw
+ * Dual licensed under the MIT and GPL licenses, located in
+ * MIT-LICENSE.txt and GPL-LICENSE.txt respectively.
+ *
+ * Date: Tue Sep 4 23:38:33 2012 -0700
+ *
+ */
+
+
+.community .fc {
+    direction: ltr;
+    /* Make the calendar unselectable */
+    -moz-user-select: none; 
+    -khtml-user-select: none; 
+    -webkit-user-select: none; 
+    -o-user-select: none; 
+}
+
+.community .fc table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-color: #c1bfbf;
+    border-style: solid;
+    border-width: 0 1px 0 1px;
+}
+
+html .community .fc,
+.community .fc table {
+    font-size: 1em;
+}
+
+.community .fc td,
+.community .fc th {
+    padding: 0;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+
+/* Header
+------------------------------------------------------------------------*/
+
+.community .fc-header td {
+    height: 40px;
+    white-space: nowrap;
+    color: #fff;
+    background-color: #4D4D4D;
+}
+
+.community .fc-header-left {
+    text-align: left;
+}
+
+.community .fc-header-center {
+    text-align: center;
+}
+
+.community .fc-header-right {
+     text-align: right;
+}
+
+.community .fc-header-title {
+    padding-top: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.community .fc-header-title h2 {
+    font-size: 16px;
+    font-weight: 100;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.community .fc .fc-header-space {
+    padding-left: 10px;
+}
+
+.community .fc-header .fc-button {
+    margin: 0;
+    vertical-align: middle;
+}
+
+/* buttons edges butting together */
+
+.community .fc-header .fc-button {
+    margin-right: -1px;
+}
+
+.community .fc-header .fc-corner-right {
+    margin-right: 1px; /* back to normal */
+}
+
+.community .fc-header .ui-corner-right {
+    margin-right: 0; /* back to normal */
+}
+
+/* button layering (for border precedence) */
+
+.community .fc-header .fc-state-hover,
+.community .fc-header .ui-state-hover {
+    z-index: 2;
+}
+
+.community .fc-header .fc-state-down {
+    z-index: 3;
+}
+
+.community .fc-header .fc-state-active,
+.community .fc-header .ui-state-active {
+    z-index: 4;
+}
+
+
+
+/* Content
+------------------------------------------------------------------------*/
+
+.community .fc-content {
+    clear: both;
+}
+
+.community .fc-view {
+    /* needed for view switching (when view is absolute) */
+    overflow: hidden;
+}
+
+
+
+/* Cell Styles
+------------------------------------------------------------------------*/
+
+.community .fc-widget-header { /* <th>, usually */
+    border-bottom: 1px solid #C1BFBF;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.community .fc-widget-header,
+.community .fc-widget-content {
+    height: 35px !important;
+    width: 35px  !important;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.community .fc-widget-content {  /* <td>, usually */
+    background-color: #F0F0F0;
+    border-top: 1px solid #FFFFFF;
+    border-right: 1px solid #C1BFBF;
+    border-bottom: 1px solid #C1BFBF;
+    border-left: 1px solid #FFFFFF;
+
+}
+
+.community .fc-widget-content > div {
+    line-height: 35px;
+}
+
+.community .fc-widget-content:hover {
+    background: #e0e0e0;
+    cursor: pointer;
+}
+
+.community .fc-widget-content.pressed > div {
+    background: #4d4d4d;
+    color: #fff;
+    border-top: 1px solid #4D4D4D;
+    border-right: 1px solid #231F20;
+    border-bottom: 1px solid #4D4D4D;
+    border-left: 1px solid #231F20;
+    margin: -1px;
+}
+
+.community .fc-widget-content.fc-first {
+    border-left: none;
+}
+
+.community .fc-widget-content.fc-last {
+    border-right: none;
+}
+
+.community .fc-widget-content.fc-first > div {
+    min-height: 0 !important;
+}
+
+.community .fc-state-highlight { /* <td> today cell */ /* TODO: add .fc-today to <th> */
+    background: #fff;
+}
+
+.community .fc-cell-overlay { /* semi-transparent rectangle while dragging */
+    background: #9cf;
+    opacity: .2;
+    filter: alpha(opacity=20); /* for IE */
+}
+
+
+
+/* Buttons
+------------------------------------------------------------------------*/
+
+.community .fc-button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.community .fc-state-default { /* non-theme */
+    border-style: solid;
+    border-width: 1px 0;
+}
+
+.community .fc-button-inner {
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+
+.community .fc-state-default .fc-button-inner { /* non-theme */
+    border: none;
+}
+
+.community .fc-button-content {
+    position: relative;
+    float: left;
+    height: 1.9em;
+    line-height: 1.9em;
+    padding: 0 .6em;
+    white-space: nowrap;
+
+}
+
+/* gloss effect */
+
+.community .fc-state-default .fc-button-effect span {
+    border: 0 none;
+    background: none;
+}
+
+/* button states (determines colors)  */
+
+.community .fc-state-default,
+.community .fc-state-default .fc-button-inner {
+    background: none;
+    border: 0 none;
+    color: 000;
+}
+
+.community .fc-state-hover,
+.community .fc-state-hover .fc-button-inner {
+    border-color: #999;
+}
+
+.community .fc-state-down,
+.community .fc-state-down .fc-button-inner {
+    border: 0 none;
+    background: none;
+}
+
+.community .fc-state-active,
+.community .fc-state-active .fc-button-inner {
+    border: 0 none;
+    background: none;
+    color: #fff;
+}
+
+.community .fc-state-disabled,
+.community .fc-state-disabled .fc-button-inner {
+    color: #999;
+    border-color: #ddd;
+}
+
+.community .fc-state-disabled {
+    cursor: default;
+}
+
+.community .fc-state-disabled .fc-button-effect {
+    display: none;
+}
+
+
+
+/* Global Event Styles
+------------------------------------------------------------------------*/
+     
+.community .fc-event {
+    border-style: solid;
+    border-width: 0;
+    font-size: .85em;
+    cursor: default;
+}
+
+.community a.fc-event,
+.community .fc-event-draggable {
+    cursor: pointer;
+}
+
+.community a.fc-event {
+    text-decoration: none;
+}
+
+.community .fc-rtl .fc-event {
+    text-align: right;
+}
+
+.community .fc-event-skin {
+    border-color: #36c;     /* default BORDER color */
+    background-color: #36c; /* default BACKGROUND color */
+    color: #fff;            /* default TEXT color */
+}
+
+.community .fc-event-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-width: 0;
+    overflow: hidden;
+}
+
+.community .fc-event-time,
+.community .fc-event-title {
+    padding: 0 1px;
+}
+
+.community .fc .ui-resizable-handle { /*** TODO: don't use ui-resizable anymore, change class ***/
+    display: block;
+    position: absolute;
+    z-index: 99999;
+    overflow: hidden; /* hacky spaces (IE6/7) */
+    font-size: 300%;  /* */
+    line-height: 50%; /* */
+}
+
+
+
+/* Horizontal Events
+------------------------------------------------------------------------*/
+
+.community .fc-event-hori {
+    border-width: 1px 0;
+    margin-bottom: 1px;
+}
+
+/* resizable */
+
+.community .fc-event-hori .ui-resizable-e {
+    top: 0           !important; /* importants override pre jquery ui 1.7 styles */
+    right: -3px      !important;
+    width: 7px       !important;
+    height: 100%     !important;
+    cursor: e-resize;
+}
+
+.community .fc-event-hori .ui-resizable-w {
+    top: 0           !important;
+    left: -3px       !important;
+    width: 7px       !important;
+    height: 100%     !important;
+    cursor: w-resize;
+}
+
+.community .fc-event-hori .ui-resizable-handle {
+    _padding-bottom: 14px; /* IE6 had 0 height */
+}
+
+
+
+/* Fake Rounded Corners (for buttons and events)
+------------------------------------------------------------*/
+
+.community .fc-corner-left {
+    margin-left: 1px;
+}
+
+.community .fc-corner-left .fc-button-inner,
+.community .fc-corner-left .fc-event-inner {
+    margin-left: -1px;
+}
+
+.community .fc-corner-right {
+    margin-right: 1px;
+}
+
+.community .fc-corner-right .fc-button-inner,
+.community .fc-corner-right .fc-event-inner {
+    margin-right: -1px;
+}
+
+.community .fc-corner-top {
+    margin-top: 1px;
+}
+
+.community .fc-corner-top .fc-event-inner {
+    margin-top: -1px;
+}
+
+.community .fc-corner-bottom {
+    margin-bottom: 1px;
+}
+
+.community .fc-corner-bottom .fc-event-inner {
+    margin-bottom: -1px;
+}
+
+
+
+/* Fake Rounded Corners SPECIFICALLY FOR EVENTS
+-----------------------------------------------------------------*/
+
+.community .fc-corner-left .fc-event-inner {
+    border-left-width: 1px;
+}
+
+.community .fc-corner-right .fc-event-inner {
+    border-right-width: 1px;
+}
+
+.community .fc-corner-top .fc-event-inner {
+    border-top-width: 1px;
+}
+
+.community .fc-corner-bottom .fc-event-inner {
+    border-bottom-width: 1px;
+}
+
+
+
+/* Reusable Separate-border Table
+------------------------------------------------------------*/
+
+.community table.fc-border-separate {
+    border-collapse: separate;
+    border-spacing: 1px;
+}
+
+.community .fc-border-separate th,
+.community .fc-border-separate td {
+    border-width: 0;
+}
+
+.community .fc-border-separate th.fc-last,
+.community .fc-border-separate td.fc-last {
+    border-right-width: 1px;
+}
+
+.community .fc-border-separate tr.fc-last th,
+.community .fc-border-separate tr.fc-last td {
+    border-bottom-width: 1px;
+}
+
+.community .fc-border-separate tbody tr.fc-first td,
+.community .fc-border-separate tbody tr.fc-first th {
+    border-top-width: 0;
+}
+
+
+
+/* Month View, Basic Week View, Basic Day View
+------------------------------------------------------------------------*/
+
+.community .fc-grid th {
+    text-align: center;
+    border: none;
+}
+
+.community .fc-grid .fc-day-number {
+    float: none;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0;
+}
+
+.community .fc-grid .fc-other-month .fc-day-number {
+    color: #C1BFBF;
+    opacity: 1;
+}
+
+.community .fc-grid .fc-day-content {
+    display: none;
+} 
+
+/* event styles */
+
+.community .fc-grid .fc-event-time {
+    font-weight: bold;
+}
+
+/* right-to-left */
+
+.community .fc-rtl .fc-grid .fc-day-number {
+    float: left;
+}
+
+.community .fc-rtl .fc-grid .fc-event-time {
+    float: right;
+}
+
+
+
+/* Agenda Week View, Agenda Day View
+------------------------------------------------------------------------*/
+
+.community .fc-agenda table {
+    border-collapse: separate;
+}
+
+.community .fc-agenda-days th {
+    text-align: center;
+}
+
+.community .fc-agenda .fc-agenda-axis {
+    width: 50px;
+    padding: 0 4px;
+    vertical-align: middle;
+    text-align: right;
+    white-space: nowrap;
+    font-weight: normal;
+}
+
+.community .fc-agenda .fc-day-content {
+    padding: 2px 2px 1px;
+}
+
+/* make axis border take precedence */
+
+.community .fc-agenda-days .fc-agenda-axis {
+    border-right-width: 1px;
+}
+
+.community .fc-agenda-days .fc-col0 {
+    border-left-width: 0;
+}
+
+/* all-day area */
+
+.community .fc-agenda-allday th {
+    border-width: 0 1px;
+}
+
+.community .fc-agenda-allday .fc-day-content {
+    min-height: 34px; /* TODO: doesnt work well in quirksmode */
+    _height: 34px;
+}
+
+/* divider (between all-day and slots) */
+
+.community .fc-agenda-divider-inner {
+    height: 2px;
+    overflow: hidden;
+}
+
+.community .fc-widget-header .fc-agenda-divider-inner {
+    background: #eee;
+}
+
+/* slot rows */
+
+.community .fc-agenda-slots th {
+    border-width: 1px 1px 0;
+}
+
+.community .fc-agenda-slots td {
+    border-width: 1px 0 0;
+    background: none;
+}
+
+.community .fc-agenda-slots td div {
+    height: 20px;
+}
+
+.community .fc-agenda-slots tr.fc-slot0 th,
+.community .fc-agenda-slots tr.fc-slot0 td {
+    border-top-width: 0;
+}
+
+.community .fc-agenda-slots tr.fc-minor th,
+.community .fc-agenda-slots tr.fc-minor td {
+    border-top-style: dotted;
+}
+
+.community .fc-agenda-slots tr.fc-minor th.ui-widget-header {
+    *border-top-style: solid; /* doesn't work with background in IE6/7 */
+}
+
+
+
+/* Vertical Events
+------------------------------------------------------------------------*/
+
+.community .fc-event-vert {
+    border-width: 0 1px;
+}
+
+.community .fc-event-vert .fc-event-head,
+.community .fc-event-vert .fc-event-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    overflow: hidden;
+}
+
+.community .fc-event-vert .fc-event-time {
+    white-space: nowrap;
+    font-size: 10px;
+}
+
+.community .fc-event-vert .fc-event-bg { /* makes the event lighter w/ a semi-transparent overlay  */
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: .3;
+    filter: alpha(opacity=30);
+}
+
+.community .fc .ui-draggable-dragging .fc-event-bg, /* TODO: something nicer like .fc-opacity */
+.community .fc-select-helper .fc-event-bg {
+    display: none\9; /* for IE6/7/8. nested opacity filters while dragging don't work */
+}
+
+/* resizable */
+
+.community .fc-event-vert .ui-resizable-s {
+    bottom: 0        !important; /* importants override pre jquery ui 1.7 styles */
+    width: 100%      !important;
+    height: 8px      !important;
+    overflow: hidden !important;
+    line-height: 8px !important;
+    font-size: 11px  !important;
+    font-family: monospace;
+    text-align: center;
+    cursor: s-resize;
+}
+
+.community .fc-agenda .ui-resizable-resizing { /* TODO: better selector */
+    _overflow: hidden;
+}
+
+/* calendar overwriting
+------------------------------------------------------------------------*/
+
+.community .mini-calendar .event-container {
+    position: absolute;
+    pointer-events: none;
+    width: 4px;
+}
+
+.community .mini-calendar .event {
+    width: 4px;
+    height: 4px;
+    float: left;
+    background: url('/etc/designs/geometrixx-outdoors/images/soco/calendar-event.png') no-repeat 0 0;
+    margin: 0 0 5px;
+}
+
+/* tagsinput
+------------------------------------------------------------------------*/
+
+.community .tagsinput { border:1px solid #999; background: #FFF; padding:5px 5px 0; width:305px; overflow-y: auto;}
+.community .tagsinput .tag { border: 1px solid #dfe0e2; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius: 3px; display: block; float: left; padding: 5px; text-decoration:none; background: #ebebeb; color: #000; margin-right: 5px; margin-bottom:5px;font-family: helvetica;  font-size:12px;}
+.community .tagsinput .tag a { display:inline-block; background:url(/etc/designs/geometrixx-outdoors/images/soco/tag-remove.png) no-repeat 0 0; height:14px; width:14px; text-indent:-9999px; } 
+.community .tagsinput input { width:80px; margin:0px; font-family: helvetica; font-size: 13px; border:1px solid transparent; padding:5px; background: transparent; color: #000; outline:0px;  margin-right:5px; margin-bottom:5px; }
+.community .tagsinput div { display:block; float: left; } 
+.community .tags_clear { clear: both; width: 100%; height: 0px; }
+.community .not_valid {background: #FBD8DB !important; color: #90111A !important;}
+.community .tag-remove { float:right;}
+
+
+
+/* Place here all CSS specific to the community pages */
+
+/* Global Styles */
+
+.community .italic {
+    font-style: italic;
+}
+
+.community .no-margin {
+    margin: 0;
+}
+
+.not-yet-implemented {
+    display: none !important;
+}
+
+.community .breadcrumb ul {
+    margin: 8px 0 35px;
+}
+
+.community .sub-nav {
+    border-bottom: 3px solid #EBEBEB;
+    padding: 13px 0 3px;
+    margin-bottom: 34px;
+    overflow: hidden;
+}
+
+.community .sub-nav h1 {
+    float: left;
+    font-weight: 100;
+    margin: 0;
+    font-style: italic;
+    font-size: 22px;
+}
+
+.community .sub-nav nav {
+    float: left;
+    margin: 0 0 0 30px;
+}
+
+.community .sub-nav nav ul li {
+    float: left;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.community .sub-nav nav ul li.current {
+    background: #EBEBEB;
+    border-radius: 5px;
+}
+
+.community .sub-nav nav ul li a {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.community .button-pair {
+    float: right;
+}
+
+.community .button-pair .btn {
+    margin-left: 6px;
+}
+
+.community .gray-button {
+    display: inline-block;
+    font-size: 11px;
+    background-color: #c3c1c1;
+    background-image: -webkit-gradient(linear, center top, center bottom, from(#c3c1c1), to(#aeadad));
+    background-image: -webkit-linear-gradient(top, #c3c1c1, #aeadad);
+    background-image: -moz-linear-gradient(top, #c3c1c1, #aeadad);
+    background-image: -o-linear-gradient(top, #c3c1c1, #aeadad);
+    background-image: -ms-linear-gradient(top, #c3c1c1, #aeadad);
+    background-image: linear-gradient(to bottom, #c3c1c1, #aeadad);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c3c1c1', endColorstr='#aeadad',GradientType=0 );
+    border-radius: 3px;
+    -moz-border-radius: 3px; 
+    -ms-border-radius: 3px; 
+    -o-border-radius: 3px; 
+    -webkit-border-radius: 3px;
+
+    padding: 4px 25px;
+    margin-right: 6px;
+}
+
+.community .gray-button:hover {
+    background-image: -webkit-gradient(linear, center top, center bottom, from(#aeadad), to(#c3c1c1));
+    background-image: -webkit-linear-gradient(top, #aeadad, #c3c1c1);
+    background-image: -moz-linear-gradient(top, #aeadad, #c3c1c1);
+    background-image: -o-linear-gradient(top, #aeadad, #c3c1c1);
+    background-image: -ms-linear-gradient(top, #aeadad, #c3c1c1);
+    background-image: linear-gradient(to bottom, #aeadad, #c3c1c1);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aeadad', endColorstr='#c3c1c1',GradientType=0 );
+}
+
+.gt-ie8 .community .gray-button {
+    filter: none;
+}
+
+.community .gray-button.last {
+    margin-right: 0;
+}
+
+.community .gray-button a,
+.community .gray-button a:hover,
+.community .gray-button a:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+.page-product .orange_button,
+.community-profile .orange_button,
+.community .orange_button {
+    padding: 4px 10px;
+    background: #BE4B16 url(/etc/designs/geometrixx-outdoors/images/soco/button.png) left top repeat-x;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    margin-top: 0;
+    cursor: pointer;
+}
+
+
+.page-product .orange_button,
+.community-profile .orange_button:hover,
+.community .orange_button:hover{
+    background: none;
+    background-image: -webkit-gradient(linear, center top, center bottom, from(#c24920), to(#f75e1a));
+    background-image: -webkit-linear-gradient(top, #c24920, #f75e1a);
+    background-image: -moz-linear-gradient(top, #c24920, #f75e1a);
+    background-image: -o-linear-gradient(top, #c24920, #f75e1a);
+    background-image: -ms-linear-gradient(top, #c24920, #f75e1a);
+    background-image: linear-gradient(to bottom, #c24920, #f75e1a);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c24920', endColorstr='#f75e1a',GradientType=0 );
+    text-decoration: none;
+}
+
+.page-product .orange_button a,
+.community .orange_button a { 
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Community Landing */
+
+.community-landing .sidebar .section.title,
+.community-landing .section.title {
+    margin: 20px 0;
+    border: 0;
+    padding: 0;
+}
+
+.community-landing .sidebar .section.title h2,
+.community-landing .section.title h2 {
+    font-size: 24px;
+    font-weight: 600;
+    font-style: italic;
+    margin: 0;
+    color: #4c4c4c;
+}
+
+.community-landing .colctrl-2c-c0 {
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+}
+
+.community-landing .communities ul {
+    margin-left: -20px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.community-landing .recommend_article {
+    float: left;
+    width: 300px;
+    margin-left: 20px;
+}
+
+.community-landing .recommend_article .text h3 {
+    text-transform: none;
+    font-size: 19px;
+    font-weight: 100;
+    margin: 12px 15px 8px;
+}
+.community-landing .recommend_article .text p {
+    margin: 5px 15px 15px;
+}
+
+.community-landing .recommend_article .text p.description {
+    font-weight: 100;
+    font-size: 12px;
+    border-bottom: 0 none;
+}
+
+.community-landing .colctrl-2c-c1 {
+    float: right;
+    width: 300px;
+}
+
+.community-landing .page-par-right {
+    overflow: hidden;
+}
+
+.community-landing.page-sidebar .page-aside {
+    float: left;
+    width: 286px;
+    margin-right: 20px;
+}
+
+.community-landing .page-aside .text {
+    line-height: 1.32em;
+}
+
+.community-landing .page-aside h3 {
+    text-transform: none;
+    font-size: 19px;
+    font-weight: 100;
+    margin: 6px 0 13px;
+}
+
+.community-landing .recommend_article {
+    margin-bottom: 20px;
+}
+.community-landing .recommend_article a img {
+    width: 100%;
+    height: auto;
+}
+
+.community-landing .textimage .image {
+    float: left;
+    margin: 0 13px 0 0;
+}
+
+.community-landing .gray-button {
+    display: inline-block;
+    float: right;
+    margin: 0;
+    background-color: #c3c1c1;
+    background-image: -webkit-gradient(linear, center top, center bottom, from(#c3c1c1), to(#aeadad));
+    background-image: -webkit-linear-gradient(top, #c3c1c1, #aeadad);
+    background-image: -moz-linear-gradient(top, #c3c1c1, #aeadad);
+    background-image: -o-linear-gradient(top, #c3c1c1, #aeadad);
+    background-image: -ms-linear-gradient(top, #c3c1c1, #aeadad);
+    background-image: linear-gradient(to bottom, #c3c1c1, #aeadad);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c3c1c1', endColorstr='#aeadad',GradientType=0 );
+    border-radius: 5px;
+    padding: 0;
+}
+
+.community-landing .gray-button:hover {
+    background-image: -webkit-gradient(linear, center top, center bottom, from(#aeadad), to(#c3c1c1));
+    background-image: -webkit-linear-gradient(top, #aeadad, #c3c1c1);
+    background-image: -moz-linear-gradient(top, #aeadad, #c3c1c1);
+    background-image: -o-linear-gradient(top, #aeadad, #c3c1c1);
+    background-image: -ms-linear-gradient(top, #aeadad, #c3c1c1);
+    background-image: linear-gradient(to bottom, #aeadad, #c3c1c1);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aeadad', endColorstr='#c3c1c1',GradientType=0 );
+}
+
+.community-landing .gray-button a,
+.community-landing .gray-button a:hover,
+.community-landing .gray-button a:active {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 18px;
+    display: block;
+}
+
+.community-landing .gray-button span {
+    background: url(/etc/designs/geometrixx-outdoors/images/soco/community-link-arrow.png) no-repeat 0 0;
+    color: #fff;
+    padding-left: 20px;
+}
+
+
+/* Calendar aside Styles */
+
+.community .calendar-detail-aside {
+    float: left;
+    width: 260px;
+}
+
+.community .mini-calendar-view {
+    width: 198px;
+    padding: 16px 30px;
+    border-right: 1px solid #C1BFBF;
+    border-bottom: 1px solid #C1BFBF;
+    border-left: 1px solid #C1BFBF;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Remove event sorting for now
+
+.event-select-wrapper {
+    background-color: #F0F0F0;
+    padding: 17px 20px;
+    color: #808080;
+}
+
+.event-select-wrapper .dropdown {
+    margin-bottom: 20px;
+}
+
+.event-select-wrapper select {
+    width: 200px;
+    padding: 2px;
+}
+
+.event-select-wrapper .form_field_text {
+    width: 195px;
+}
+
+*/
+
+/* Calendar Events/Subscriptions detail */
+
+.community .soco-calendar-detail {
+    float: right;
+    width: 640px;
+}
+
+.community .event-accordion-block {
+    margin-bottom: 50px;
+}
+
+.community .event-accordion-row {
+    margin-bottom: 8px;
+}
+
+.community .events.left-col,
+.community .event-accordion.left-col {
+    float: left;
+}
+
+.community .events.left-col .event-date {
+    margin-bottom: 5px;
+}
+
+.community .event-date {
+    width: 24px;
+    padding: 1px 10px;
+    border: 3px solid #F0F0F0;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.community .event-time {
+    width: 30px;
+    background: #F0F0F0;
+    padding: 7px 10px;
+    font-size: 10px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.community .event-time .multi {
+    color: #F85E1A;
+}
+
+.community .events.right-col{
+    float: right;
+    width: 535px;
+}
+
+.community .events.right-col h1 {
+    margin: 0 0 3px;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.community .event-accordion.right-col {
+    float: right;
+    width: 565px;
+}
+
+.community .event.right-col h1,
+.community .event.right-col h2,
+.community .event-accordion.right-col h1,
+.community .event-accordion.right-col h2 {
+    margin: 0;
+    font-weight: 100;
+}
+
+.community .event-accordion-block h1,
+.community .event-accordion.right-col h1 {
+    float: left;
+    font-size: 27px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.community .event-accordion.right-col h2 {
+    font-size: 20px;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.community .event-accordion p.event-type {
+    font-style: italic;
+}
+
+.community .event-accordion p.event-type span {
+    font-weight: bold;
+}
+
+.community .event-date h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.community .accordion-toggle.button {
+    float: right;
+    width: 34px;
+    height: 28px;
+    background: url(/etc/designs/geometrixx-outdoors/images/soco/accordion-toggle.png) no-repeat 0 -28px; 
+}
+
+.community .accordion-toggle:hover,
+.community .accordion-toggle:active {
+    cursor: pointer;
+}
+
+.community .accordion-toggle.expanded {
+    background-position: 0 0;
+}
+
+.community .event-accordion .event-gray-bar {
+
+    border-top: 1px solid #DFE0E2;
+    border-bottom: 1px solid #DFE0E2;
+    background: #F7F7F7;
+}
+
+.community .event-gray-bar span {
+    float: left;
+    padding: 9px 6px 6px;
+    font-style: italic;
+}
+
+.community .event-gray-bar span span {
+    font-weight: bold;
+}
+
+.community .event-gray-bar-right {
+    float: right;
+    padding: 6px 6px 6px 15px;
+    border-left: 1px solid #DFE0E2;
+}
+
+.community .soco-event-header {
+    margin-bottom: 50px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #DFE0E2;
+}
+
+.community .soco-event-header .orange_button,
+.community .forum .orange_button {
+    float: right;
+}
+
+.community .event-accordion.content {
+    overflow: hidden;
+}
+
+.community .short {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #DFE0E2;
+}
+
+.community .read-more {
+    color: #F85E1A;
+    font-style: italic;
+}
+
+.community .event-accordion.opts-bar {
+    border-top: 1px solid #DFE0E2;
+    border-bottom: 1px solid #DFE0E2;
+    padding: 5px 0;
+    line-height: 20px;
+}
+
+.community .opts-bar .option {
+    background: url(/etc/designs/geometrixx-outdoors/images/soco/event-bottom-opts.png) no-repeat;
+    padding-left: 18px;
+    margin-right: 25px;
+    margin-top: 10px;
+}
+
+.community .opts-bar .option a {
+    font-size: 13px;
+    color: #4C4C4C;
+}
+
+.community .opts-bar .print {
+    background-position: 0 2px;
+}
+
+.community .opts-bar .permalink {
+    background-position: 0 -14px;
+}
+
+.community .opts-bar .iCal {
+    background-position: 0 -29px;
+}
+
+.community .opts-bar .social-media {
+    float: right;
+}
+
+.opts-bar .social-widget {
+    float: left;
+    margin-left: 10px;
+}
+
+.social-widget.facebook {
+    width: 75px;
+    overflow: hidden;
+}
+
+.social-widget.google {
+    width: 59px;
+    overflow: hidden;
+}
+
+.social-widget.twitter {
+    width: 76px;
+    overflow: hidden;
+}
+
+.fb-like {
+    width: 75px;
+    overflow: hidden;
+}
+
+.g-plusone {
+    width: 75px;
+    overflow: hidden;
+}
+
+.twitter-share-button {
+    width: 76px;
+    overflow: hidden;
+}
+
+/* Community About */
+
+.community-about .page-par-left .title {
+    padding-bottom: 4px;
+    border-bottom: 7px solid #EF5A28;
+    margin-bottom: 20px;
+}
+
+.community-about .page-par-left .title h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 100;
+    color: #8C8C8C;
+}
+
+.community-about .admins {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.community-about .admins .admin-listing {
+    padding: 18px;
+    border-bottom: 1px solid #ebeced;
+    background: #f5f5f5;
+}
+
+.community-about .sidebar ol {
+    margin: 0;
+    padding: 0 0 0 20px;
+}
+
+/* Community Tabs */
+
+/* Removed calendar tab styles for now 
+
+.soco-tabctrl-header {
+    display: block;
+    border-bottom: 1px solid #ADACAC;
+}
+
+.soco-tabctrl-header ul {
+    overflow: hidden;
+    padding: 0;
+    font-size: 14px;
+    margin: 0;
+    float: left;
+}
+
+.soco-tabctrl-header ul li {
+    float: left;
+    list-style: none;
+    text-align: center;
+}
+
+.soco-tabctrl-header ul li a {
+    float: left;
+    padding: 5px 0;
+    margin-right: 1px;
+    width: 142px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #ADACAC;
+    border-radius: 3px 3px 0 0;
+}
+
+.soco-tabctrl-header ul li a:hover {
+    color: #000;
+}
+
+.soco-tabctrl-header ul li.active a,
+.soco-tabctrl-header ul li.active a:hover {
+    border-color: #F85E1A;
+    color: #fff;
+    background: #F85E1A;
+}
+
+.soco-tabctrl-buttons {
+    float: right;
+}
+*/
+
+/* Calendar tab Content */
+
+.js .soco-tabctrl-container {
+    position: relative;
+    overflow: hidden;
+}
+.js .soco-tabctrl-container .soco-tabctrl-content .soco-tabctrl-title {
+    position: absolute;
+    text-indent: -1000em;
+}
+.soco-tabctrl-container .soco-tabctrl-content {
+    overflow: hidden;
+}
+.js .soco-tabctrl-container .soco-tabctrl-content {
+  /*  position: absolute; */
+    width: 100%;
+}
+.js .cq-wcm-edit .soco-tabctrl-container .soco-tabctrl-content {
+    position: relative;
+}
+.js .soco-tabctrl-container .soco-tabctrl-content:nth-child(n+2) {
+    display: none;
+}
+
+/* Forum Styles */
+
+.community .forum .searchbox {
+    /* Search box was not included in the design */
+    display: none;
+}
+
+.community .forum .login {
+    /* this was not included in the design */
+    display: none;
+}
+
+.community .forum-top {
+    border-bottom: 7px solid #EF5A28;
+    padding-bottom: 5px;
+}
+
+.community .forum-top h1 {
+    float: left;
+    margin: 0;
+    text-transform: uppercase;
+    color: #8C8C8C;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.community .forum-top button,
+.community .topic-top button {
+    float: right;
+    margin-top: 8px;
+}
+
+.community .forum .topics ul {
+    /* Override style in clientlibs to match the design */
+    width: auto !important;
+    margin: 0 0 10px;
+}
+
+.community .forum .topics ul li:first-child {
+    border-top: none !important;
+}
+
+.community .forum .topics ul li {
+    border-top: none !important;
+    padding: 17px 0 27px !important;
+    border-bottom: 1px solid #D6D6D6 !important;
+}
+
+.community .forum .topics ul li:hover {
+    background-color: #fff !important;
+}
+
+.community .avatar-column {
+    float: left;
+    width: 45px;
+    margin-right: 20px;
+}
+
+.community .forum ul li .comment .info-column {
+    margin-top: 10px;
+}
+
+.community .forum ul li .comment .info-column.top-comment {
+    width: 644px;
+    padding: 20px 76px 0 20px;
+    background: whiteSmoke url(/etc/designs/geometrixx-outdoors/images/soco/green-checkmark.png) no-repeat 20px 20px;
+}
+
+.community .forum .comment .message .info-column.top-comment .best-answer {
+    font-size: 12px;
+    font-weight: bold;
+    color: #8DC63F;
+    margin: 10px 0 30px 37px;
+}
+
+.community .forum .comment .message .info-column.top-comment .text {
+    margin-bottom: 20px;
+}
+
+.community .forum ul li .comment .info-column > p,
+.community .forum ul li .info-column > p {
+    margin: 0;
+}
+
+.community .forum ul li .comment .info-column .subject {
+    font-weight: 600;
+    font-style: italic;
+    margin: 0;
+}
+
+.community .forum .topics ul li .subject {
+    border-bottom: none;
+}
+
+.community .forum .subject a {
+    color: #231F20;
+}
+
+.community .info-column .text-heading {
+    margin-bottom: 13px;   
+}
+
+.community .info-column {
+    float: left;
+    font-weight: 100;
+    line-height: 1.4em;
+}
+
+.community .info-column .attachments img {
+    margin: 15px 0 0;
+}
+
+.community .info-column img {
+    margin: 0 0 15px;
+}
+
+.community .forum .topics .info-column .subject {
+    color: #231F20;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+.community .forum .info-column .lastpost {
+    /* Override style in clientlibs to match the design */
+    font-size: 12px;
+}
+
+/* 
+    Switch the positions of these two elements to match the design 
+    by floating them left/right.
+*/
+
+.community .forum .info-column .time a {
+    color: #4D4D4D;
+    font-weight: 100;
+}
+
+.community .forum .info-column .user {
+    float: left;
+    /* Override style in clientlibs to match the design */
+    color: #4D4D4D;
+    border-right: 1px solid #4D4D4D;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.community .forum .detail-column.top-comment {
+    padding-left: 40px;
+    background: url(/etc/designs/geometrixx-outdoors/images/soco/green-checkmark.png) no-repeat 0 5px;
+}
+
+.community .forum .detail-column .replies {
+    background: url(/etc/designs/geometrixx-outdoors/images/soco/comment-count-bubble.png) no-repeat 0 0;
+    width: 32px;
+    height: 24px;
+    padding: 5px 0 !important;
+    color: #4D4D4D;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.community .forum .post-summary {
+    width: 600px;
+}
+
+.community .post-summary {
+    margin-top: 18px !important;
+    color: #4d4d4d;
+    font-size: 13px;
+}
+
+.community .post-summary a {
+    color: #F85E1A;
+    font-weight: 100;
+}
+
+.community .question-box {
+    position: relative;
+    padding: 12px 0 14px 13px;
+    margin: 1px 0 39px;
+    border-bottom: 1px solid #C1BFBF;
+    background-color: #EBEBEB;
+}
+
+.community .question-box:before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #fff;
+    bottom: 0;
+    left: 0;
+}
+
+.community .question-box input[type="text"] {
+    width: 342px;
+    padding: 6px 5px;
+    font-size: 12px;
+    color: #ADACAC;
+    border: 1px solid #C1BFBF;
+}
+
+/* Topics */
+
+.community .topic-top {
+    border-bottom: 7px solid #EF5A28;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+}
+
+.community .topic-top h1 {
+    font-size: 27px;
+    color: #4d4d4d;
+    float: left;
+    margin: 0;
+    font-style: italic;
+}
+
+.community .topic-top h2 {
+    float: left;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 100;
+    color: #8C8C8C;
+}
+
+.community .forum .topic .message {
+    background-color: #fff;
+    border-top: none;
+    padding: 10px 0 15px;
+}
+
+.community .forum .comment .message .avatar-column {
+    float: left;
+    margin-right: 50px;
+    width: 135px;
+}
+
+.community .forum .comment .avatar {
+    font-size: 11px;
+    display: inline;
+}
+
+.community .forum .avatar span {
+    display: block;
+}
+
+.community .avatar-column a .user {
+    margin: 5px 0 10px;
+    overflow: hidden;
+    color: #F85E1A;
+    font-size: 12px;
+    text-overflow: ellipsis;
+}
+
+.community .avatar-column .sendmsgdiv {
+    display: inline;
+}
+
+.community .avatar-column .sendmsgicon {
+    background: url(/etc/designs/geometrixx-outdoors/images/soco/send-message.png);
+    height: 11px;
+    width: 15px;
+    margin-right: 3px;
+    float: left;
+    display: inline;
+}
+
+.community .avatar-column a .sendmsg {
+    color: #F26522;
+    font-size: 11px;
+    text-overflow: ellipsis;
+    margin-bottom: 11px;
+}
+
+.community .avatar-column .location,
+.community .avatar-column .joined,
+.community .avatar-column .numberOfPosts {
+    margin-bottom: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.community .badgedisplay {
+    display: inline-block;
+}
+
+.community .badge img {
+    float: left;
+    margin-right: 5px;
+}
+
+.community .badge .contributor {
+    width: 65px;
+    padding-top: 3px;
+}
+
+.community .badge .gold {
+    color: #BE8222;
+    font-size: 11px;
+    font-style: italic;
+    float: left;
+}
+
+.community .answerVoteControls {
+    margin-top: 15px;
+}
+
+.community .answerVoteControls .voteControl {
+    position: relative;
+    display: inline-block;
+    background: #F0F0F0;
+    font-size: 12px;
+    font-weight: normal;
+    color: #808080;
+    padding: 5px 10px 5px 30px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.community .answerVoteControls .voteControl input,
+.community .answerVoteControls .voteControl span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    background-color: #d2d2d2;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.community .answerVoteControls .voteControl .voted {
+    background-color: #e47239;
+}
+
+.community .answerVoteControls .up-vote {
+    background-image: url(/etc/designs/geometrixx-outdoors/images/soco/volume-up.png);
+}
+
+.community .answerVoteControls .down-vote {
+    background: url(/etc/designs/geometrixx-outdoors/images/soco/volume-down.png);
+}
+
+.community .forum .topic .message.op {
+    background-color: #fff;
+}
+
+.community .forum .topic .stats {
+    padding: 30px 0 0;
+    border-bottom: none;
+    font-size: 16px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #8C8C8C;
+}
+
+.community .forum .comment .message .info-column {
+    width: 650px;
+    font-size: 14px;
+    color: #4D4D4D;
+}
+
+.community .forum .comment .message .info-column p {
+    margin: 0;
+    line-height: 1.3em;
+}
+
+.community .forum .comment .message .info-column .time {
+    font-size: 11px;
+    margin: 0 0 15px;
+    font-style: italic;
+}
+
+.community .forum .comment .message .info-column .reply {
+    background: url(/etc/designs/geometrixx-outdoors/images/soco/forum-reply-bubble.png) no-repeat 0 3px;
+    padding-left: 18px;
+    margin-top: 15px;
+}
+
+.community .forum .comment .message .info-column .reply a {
+    color: #F85E1A;
+    font-weight: 100;
+    font-size: 12px;
+}
+
+/* Composer */
+
+.community .composer-container {
+    background: #fff;
+    padding: 0 23px 60px;
+}
+
+.community .geometrixx-composer {
+    padding: 20px; 
+    background-color: #EBEBEB;
+    border-radius: 5px;
+}
+
+.community .composer-title {
+    background: url(/etc/designs/geometrixx-outdoors/images/soco/forum-reply-bubble-lg.png) no-repeat 0 4px;
+    padding-left: 21px;
+    margin-bottom: 30px;
+}
+
+.community .composer-title h1 {
+    font-size: 19px;
+    margin: 0;
+    font-style: italic;
+}
+
+.community .composer-row {
+    margin-bottom: 15px;
+}
+
+.community .composer-left-col {
+    float: left;
+    width: 196px;
+}
+
+.community .composer-left-col label {
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.community .composer-right-col {
+    width: 587px;
+    float: left;
+}
+
+.community .geometrixx-composer textarea {
+    width: 575px;
+    height: 190px;
+    padding: 5px;
+    border: 1px solid #999999;
+}
+
+.community .geometrixx-composer .composer-row textarea {
+    width: 555px;
+}
+
+.community .geometrixx-composer .attachment {
+    float: left;
+}
+
+.community .geometrixx-composer .attachment p {
+    margin-top: 0;
+}
+
+.community .geometrixx-composer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.community .geometrixx-composer  .gray-button {
+    padding: 4px 6px;
+}
+
+.community .geometrixx-composer .composer-row .composer-right-col .orange_button {
+    display: inline-block;
+    float: right;
+    margin: 27px 20px 0 0;
+}
+
+.community .geometrixx-composer .composer-row .btn,
+.community .geometrixx-composer .btn.submit {
+    margin-top: 0;
+    float: right;
+}
+
+/* Pagination */
+
+.community .forum .pagination-wrapper {
+    margin: 30px 0;
+    padding-left: 370px;
+}
+
+.community .forum .pagination-wrapper ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.community .forum .pagination-wrapper ul li {
+    float: left;
+    clear: none;
+    border: 0 none;
+}
+
+.community .forum .pagination-wrapper ul li:hover {
+    background: none;
+}
+
+.community .forum .pagination-wrapper .last {
+    margin-left: 11px;
+}
+
+.community .forum .pagination-wrapper p {
+    font-size: 12px;
+    color: #4D4D4D;
+    text-transform: uppercase;
+    margin: 0 15px 0 0;
+}
+
+.community .forum .pagination-wrapper a,
+.community .divider {
+    font-size: 12px;
+    color: #ADACAC;
+}
+
+.community .forum .pagination-wrapper .active {
+    color: #4D4D4D;
+}
+
+.community .forum .pagination-wrapper .prev,
+.community .forum .pagination-wrapper .next {
+    display: block;
+    width: 17px;
+    height: 16px;
+    background: url(/etc/designs/geometrixx-outdoors/images/soco/pagination-arrow-right.png) no-repeat 0 0;
+}
+
+.community .forum .pagination-wrapper .prev {
+    margin-right: 11px;
+    background: url(/etc/designs/geometrixx-outdoors/images/soco/pagination-arrow-left.png) no-repeat 0 0;
+}
+
+.community .forum .pagination-wrapper .next {
+    margin-left: 11px;
+}
+
+.community .divider {
+    margin: 0 5px;
+}
+
+/*  Global Modal Window styles  */
+
+.community #mask {
+    top: 0; 
+    position: absolute;
+    z-index: 900;
+    background: #262626;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+    filter: alpha(opacity=85);
+    opacity: 0.85;
+}
+
+.community .modal-container {
+    z-index: 1000;
+    position: fixed;
+}
+
+.community .modal-window {
+    position: relative;
+    background: #fff;
+    padding: 25px;
+    color: #4C4C4C;
+}
+
+.community .modal-window-calendar {
+    position: relative;
+    background: #fff;
+    color: #4C4C4C;
+}
+
+.community .modal-window .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: url(/etc/designs/geometrixx-outdoors/images/soco/modal-window-close.png) no-repeat 0 0;
+    height: 20px;
+    width: 20px;
+}
+
+.community .modal-window .close:hover {
+    cursor: pointer;
+}
+
+.community .modal-window .title {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #6D6D6D;
+    margin-bottom: 20px;
+}
+
+.community .modal-window .title h1 {
+    margin: 0;
+    font-size: 19px;
+}
+
+.community .gray-modal-container,
+.community .modal-window-calendar form,
+.community .modal-window form {
+    background: #EBEBEB;
+    padding: 35px 28px 28px 22px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* New Thread Modal Window */
+
+.community .new-thread .form-row {
+    margin-bottom: 22px;
+}
+
+.community .new-thread .form-left-col {
+    float: left;
+    width: 115px;
+}
+
+.community .new-thread .form-left-col label {
+    color: #414042;
+    font-weight: 600;
+}
+
+.community .new-thread .form-right-col {
+    float: right;
+    width: 465px;
+}
+
+.community .new-thread .form-right-col input[type=text] {
+    width: 305px;
+    border: 1px solid #999999;
+    padding: 5px 0;
+}
+
+.community .new-thread .form-right-col input.date {
+    width: 65px;
+    padding-right: 40px;
+}
+
+.community .new-thread .form-right-col .ui-datepicker-trigger {
+    position: relative;
+    left: -24px;
+    top: -1px;
+    cursor: pointer;
+}
+
+.community .new-thread .form-right-col .upload {
+    float: none;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    margin: 0;
+}
+
+.community .new-thread .form-right-col .upload input {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    /* start of transparency styles */
+    opacity: 0;
+    -moz-opacity: 0;
+    filter:alpha(opacity:0);
+    /* end of transparency styles */
+    background: red;
+    z-index: 2; /* bring the real upload interactivity up front */
+    width: 200%;
+    height: 200%;
+}
+
+.community .new-thread .form-right-col .upload:hover input {
+    display: block;
+}
+
+.community .new-thread .form-right-col textarea {
+    width: 465px;
+    height: 155px;
+    border: 1px solid #999999;
+}
+
+.community .new-thread .form-right-col p {
+    margin: 0 0 20px;
+}
+
+.community .new-thread .gray-button {
+    padding: 4px 6px;
+}
+
+.community .new-thread .email-notify {
+    float: left;
+}
+
+.community .new-thread .orange_button {
+    float: right;
+}
+
+/* Community Overview Pages */
+
+.community .content-left {
+    float: left;
+    width: 600px;
+}
+
+.community .content-right {
+    float: right;
+    width: 290px;
+}
+
+.community .row {
+    margin-bottom: 18px;
+    padding: 15px 0;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.community .row.grayed {
+    background: #f5f5f5;
+}
+
+.community .clickable {
+    display: block;
+    font-size: 13px;
+    color: #4c4c4c;
+}
+
+.community .clickable:hover {
+    text-decoration: none;
+}
+
+.community .overview.title {
+    background: #f5f5f5;
+    padding: 10px;
+    margin-bottom: 15px;
+ }
+
+.community .overview.title h1 {
+    float: left;
+    margin: 0;
+    color: #4c4c4c;
+    font-size: 16px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.community .overview.title a {
+    float: right;
+    color: #898b8c;
+    font-size: 14px;
+}
+
+.community .overview.title.has-button {
+    line-height: 23px;
+}
+
+.community .overview-image {
+    float: left;
+    margin-right: 13px;
+}
+
+.community .overview-text {
+    padding-top: 8px;
+}
+
+.community .detail-top.row {
+    border-bottom: 7px solid #ebeced;
+}
+
+.community .image.row img {
+    display: block;
+    float: left;
+    margin-right: 5px;
+}
+
+.community .image.row img.last {
+    margin-right: 0;
+}
+
+.community .text-heading h1 {
+    margin: 0 0 10px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.community .text-heading p {
+    margin: 5px 0 0;
+}
+
+.community .text-heading h2 {
+    margin: 0;
+    color: #4c4c4c;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.community .text-heading span {
+    font-size: 12px;
+    color: #808080;
+}
+
+.community .text-heading .username {
+    padding-right: 8px;
+    margin-right: 8px;
+    border-right: 1px solid #c4c4c4;
+}
+
+.community .btn .comments {
+    background: url(/etc/designs/geometrixx-outdoors/images/soco/view-comments-bubble.png) no-repeat 0 2px;
+    padding-left: 21px;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+/* Sidebars
+------------------------------------------------------------------------*/
+
+.community .sidebar .section,
+.community .sidebar-section {
+    margin-bottom: 36px;
+}
+
+.community .sidebar .section.title,
+.community .sidebar .title,
+.community .sidebar.title,
+.community-profile .peoplelist-container .title{
+    overflow: hidden;
+    margin-bottom: 0;
+    border-bottom: 7px solid #ef5a28;
+    padding-bottom: 4px;
+}
+
+.community .sidebar.title h1,
+.community .sidebar.title h2,
+.community .sidebar .title h1,
+.community .sidebar .title h2,
+.community-profile .peoplelist-container .title h2{
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 100;
+    color: #8c8c8c;
+}
+.community-profile .peoplelist-container .peoplelist p{
+    border-bottom:0px;
+}
+.community .sidebar.title h1,
+.community .sidebar.title h2,
+.community .sidebar .title h1,
+.community .sidebar .title h2{
+    float: left;
+}
+
+.community .sidebar .section.title h3 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 100;
+    color: #8c8c8c;
+}
+
+.community .sidebar.title a,
+.community .sidebar .title a {
+    float: right;
+}
+
+.community .slot {
+    border-bottom: 1px solid #ebeced;
+}
+
+.community .slot .clickable {
+   padding: 12px 0;
+   font-size: 11px;
+}
+.community .slot .gray {
+    background-color: #f5f5f5;
+}
+.community .slot .event-date {
+    float: left;
+    margin-right: 17px;
+}
+
+.community .slot .gray .event-date {
+    background: #ffffff;
+    border-color: #efefef;
+}
+
+.community .slot .text-heading h1 {
+    font-size: 23px;
+    color: #4c4c4c;
+    margin: 0;
+}
+
+.community .slot .text-heading h2 {
+    margin: 7px 0;
+    font-size: 15px;
+    color: #f85e1a;
+    margin-bottom: 3px;
+}
+
+.community .slot .gray .feed-type {
+    margin-bottom: 7px;
+}
+
+.community .slot .gray .feed-type span {
+    background-color: #fff;
+    font-size: 11px;
+    color: #a7a9ac;
+}
+
+.community .sidebar-avatar {
+    float: left;
+    margin-right: 20px;
+}
+
+.community .sidebar-member-info h3 {
+    font-size: 14px;
+    margin: 0;
+}
+
+.community .sidebar-member-info h2 {
+    font-size: 19px;
+    color: #f85e1a;
+    margin: 0;
+}
+
+.community .slot .clickable .text-heading .date  {
+    font-size: 13px;
+}
+
+.community .slot .clickable .text-heading span {
+    font-size: 11px;
+}
+
+.community .slot .clickable p {
+    margin-bottom: 0;
+}
+
+/* Sidebar: Activity stream */
+
+.community .sidebar .activity .row {
+    border-bottom: 1px solid #ebeced;
+    padding-top: 0;
+    padding-left: 10px;
+    background-color: #f5f5f5;
+    padding-right: 10px;
+}
+
+.community .sidebar .activity .type {
+    margin-bottom: 7px;
+}
+
+.community .sidebar .activity .type p {
+    background-color: #fff;
+    font-size: 11px;
+    color: #a7a9ac;
+}
+
+.community .sidebar .activity .time {
+    color: #808080;
+}
+
+.community .sidebar .activity .time span {
+    border-color: #808080;
+}
+
+.community .sidebar .activity .desc {
+    width: 210px;
+    font-size: 11px;
+}
+
+.community .sidebar .activity .desc .topic {
+    margin: 7px 0 3px 0;
+    color: #f85e1a;
+    font-size: 15px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.community .sidebar .activity .comment-summary {
+    font-size: 11px;
+}
+
+/* Sidebar: Top q&a answers (trending questions) */
+
+.community .trendingquestions label[for="date"],
+.community .trendingquestions select {
+    display: none;
+}
+
+/* Sidebar: Journal (top blog posts) */
+
+.community .topblogposts label[for="date"],
+.community .topblogposts select {
+    display: none;
+}
+
+/* Sidebar: Top members */
+
+.community .topusers label[for="date"],
+.community .topusers select {
+    display: none;
+}
+
+.community .topusers .slot .first {
+    padding-top: 20px;
+}
+
+.community .top-member {
+    overflow: hidden;
+    color: #4c4c4c;
+    font-size: 13px;
+    font-weight: 600;
+    text-overflow: ellipsis;
+}
+
+.community .sidebar-member-info {
+    float: left;
+    width: 200px;
+}
+
+.community .sidebar-member-info .badges {
+    font-style: italic;
+    font-size: 11px; 
+}
+
+.community .sidebar-member-info .badges img {
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 4px;
+}
+
+.community .sidebar-member-info .badges span {
+    float: left;
+    display: inline-block;
+    padding-top: 5px;
+}
+
+.community .badges .admin {
+    color: #8e8f91;
+}
+
+.community .badges .gold {
+    color: #cb9f56;
+}
+
+.community .badges .silver {
+    color: #a5a6a9;
+}
+
+.community .badges .bronze {
+    color: #ac8867;
+}
+
+/* Sidebar: Top forum topics */
+
+.community .topforumtopics label[for="date"],
+.community .topforumtopics select {
+    display: none;
+}
+
+/* Sidebar: Top comment */
+
+.community .sidebar-section .top-comment {
+    margin-right: 10px;
+    padding: 5px 5px 5px 50px;
+}
+
+.community .top-comment {
+    background: #f5f5f5;
+}   
+
+
+.community .sidebar-section .gray .top-comment {
+    background-color: #fff;
+}
+
+/* Sidebar: Upcoming events */
+
+.community .sidebar .upcomingevents .text-heading {
+    float: left;
+    width: 210px;
+}
+
+/* Category forum pages */
+
+.community .category .info-column {
+    width: 520px;
+}
+
+/*
+ * Journals
+ */
+
+/* Journal listing page */
+
+
+.community ul.journal {
+    padding-left: 0;
+}
+
+.community .journalentry {
+    margin-bottom: 6px;
+    padding: 15px 0;
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.community .journalentry h2 {
+    margin: 0;
+    color: #4c4c4c;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.community .journalentry h2 a {
+    color: #4c4c4c;
+}
+
+.community .journalentry small {
+    font-size: 12px;
+    color: #808080;
+}
+
+.community .journalentry .entry {
+    margin-top: 15px;
+}
+
+.community .page-main .journalentry .btn {
+    margin-top: 18px;
+    padding: 5px 15px;
+}
+
+/* Journal detail page */
+
+.community .topic-top.gray {
+    margin-bottom: 0;
+}
+
+.community .journal .entry-attachment-list {
+    padding: 0;
+    margin: 20px 0 20px 0;
+    list-style-type: none;
+}
+
+.community .journal .entry-image-list {
+    margin: 0 16px 0 0;
+    padding: 0;
+    list-style-type: none;
+    float: left;
+    height: 160px;
+}
+
+/* Comments */
+
+.community .comments {
+    margin: 0 0 15px;
+    padding: 0;
+}
+
+.community .comments li {
+    padding: 20px 0 20px 10px;
+    list-style-type: none;
+    background: #f5f5f5;
+    border-bottom: 1px solid #ebeced;
+}
+
+.community .comments li .info-column {
+    width: 505px;
+}
+
+.community #comments .geometrixx-composer textarea {
+    width: 545px;
+}
+
+.community .comments .comment-info {
+    width: auto;
+}
+
+.community .comments .comment-text {
+    background: #fff;
+    font-family: sans-serif;
+}
+
+.community .comments .comment-image {
+    margin-top: 10px;
+}
+
+/* About Page */
+
+.community .about-title.title {
+    margin-bottom: 20px;
+}
+
+.community .about-body .about-hero {
+    margin-bottom: 15px;
+}
+
+.community .sidebar.member-count {
+    background: whiteSmoke;
+    padding: 10px 20px 5px 10px;
+    margin: 21px 0 36px;
+    float: none;
+}
+
+.community .sidebar.member-count h2 {
+    float: left;
+    margin: 0;
+    color: #4C4C4C;
+    font-size: 16px;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.community .sidebar.member-count .count {
+    float: right;
+    color: #4C4C4C;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Category Members Page */
+
+.community .member.info-column {
+    float: left;
+}
+
+.community .member.info-column p {
+    font-size: 14px;
+    margin: 2px 0 5px;
+}
+
+.community .info-column .badges .location {
+    padding-right: 8px;
+    margin-right: 8px;
+    border-right: 1px solid #6D6D6D;
+}
+
+.community .info-column .badges img {
+    display: inline;
+    margin-right: 5px;
+    margin-top: 0;
+}
+
+.community .member.detail-column {
+    float: right;   
+}
+
+.community .member.detail-column span {
+    display: block;
+    margin-top: 10px;
+    background: url(/etc/designs/geometrixx-outdoors/images/soco/comment-count-bubble.png) no-repeat 0 0;
+    width: 32px;
+    height: 24px;
+    padding: 5px 0 !important;
+    color: #4D4D4D;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+
+/* Edit Profile */
+
+/* columns */
+.community-profile .colctrl-2c-c0 {
+    float: left;
+    width: 290px;
+}
+
+.community-profile .colctrl-2c-c1 {
+    float: right;
+    width: 600px;
+}
+
+/* Title top */
+.community-profile .title.top {
+    border-bottom: 3px solid #EBEBEB;
+    margin-bottom: 20px;
+}
+
+.community-profile .title.top h1 {
+    float: left;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.community-profile .title.top .btn {
+    float: right;
+}
+
+/* Rounded gray boxes */
+.gray-rounded {
+    padding: 20px;
+    margin-bottom: 15px;
+    background: #EBEBEB;
+    border-radius: 5px;
+}
+
+.community-profile .gray-rounded .section.title {
+    padding-bottom: 0;
+}
+
+.community-profile .gray-rounded h2 {
+    margin: 0 0 10px;
+    font-size: 19px;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.gray-rounded.picture {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+/* form elements */
+.community-profile .par form {
+    margin: 0;
+}
+
+.community-profile .par .form_leftcol {
+    padding-left: 0;
+}
+
+
+.field-column {
+    float: left;
+    width: 235px;
+    margin-right: 30px;
+}
+
+.field-column .form-pair {
+    width: 235px;
+    margin-bottom: 15px;
+}
+
+.field-column input[type="text"] {
+    width: 230px;
+    border: 1px solid #999999;
+}
+
+#profile-info .form-label {
+    margin-bottom: 5px;
+}
+
+#profile-info label {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.community-profile form .form_leftcollabel {
+    width: 100px;
+}
+
+.community-profile .par form .form_row .form_mv_add {
+    margin-left: 140px;
+}
+
+.community-profile #profile-info textarea,
+.community-profile form .form_field_textarea {
+    width: 350px;
+    height: 150px;
+    border: 1px solid #999999;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+.community-profile #profile_age,
+.community-profile #profile_gender {
+    width: 80px;
+}
+
+.edit #gender {
+    float: left;
+    width: 80px !important;
+    margin-right: 10px;
+}
+
+.edit #gender select {
+    width: 80px;
+}
+
+.edit #birthdate {
+    float: left;
+    width: 117px!important;
+}
+
+.edit #birthdate input[type="text"] {
+    width: 140px;
+}
+
+.edit #city {
+    float: left;
+    width: 160px !important;
+}
+
+.edit #city input[type="text"] {
+    width: 140px;
+}
+
+.edit #state {
+    float: left;
+    width: 74px!important;
+}
+
+.edit #state select {
+    width: 74px;
+}
+
+#profile-info .gray-button {
+    float: left;
+    margin-right: 10px;
+    padding: 5px 16px;
+}
+
+#profile-info .orange_button {
+    float: right;
+    padding: 4px 17px;
+}
+
+/* avatar/picture */
+.community-profile .avatar > img {
+    float: left;
+    margin-right: 18px;
+}
+
+.community-profile .avatar {
+    margin-bottom: 7px;
+}
+
+.community-profile .picture .image img {
+    padding-bottom: 10px;
+}
+
+.community-profile .picture .image .form_leftcol,
+.community-profile .picture .image .form_leftcollabel {
+    float: none;
+}
+
+.community-profile .picture .image .form_rightcol {
+    margin-left: 0;
+}
+
+.community-profile .picture .image .form_leftcollabel {
+    padding-bottom: 5px;
+}
+
+.community-profile .picture .image .form_leftcolmark {
+    display: none;
+}
+
+.community-profile .gray-button.file {
+    padding: 5px;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+/* badges */
+.community-profile .avatar .badges {
+    float: left;
+    font-size: 15px;
+    width: 95px;
+}
+
+
+/* followers */
+.community-profile .sidebar-content .follower {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+/* social connect */
+.social-toggle {
+    margin-bottom: 10px;
+}
+
+.social-toggle p {
+    float: left;
+    margin: 5px 10px 0 0;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.social-toggle-button {
+    float: right;
+    height: 24px;
+    width: 64px;
+    background: url(/etc/designs/geometrixx-outdoors/images/soco/social-button-sprite.png) no-repeat 0 0;
+}
+
+.social-toggle-button.pressed {
+    background-position: 0 -24px;
+}
+
+.community-profile .channellinklabel {
+    width: 80px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.community-profile .connect-slider-frame {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+  width: 64px;
+  height: 24px;
+  background-color: #808080;
+  background-image: none;
+  -ms-filter: "none";
+  border-top: 1px solid #424242;
+  border-right: 1px solid #424242;
+  border-bottom: 1px solid #424242;
+  border-left: 1px solid #424242;
+  -moz-border-radius: 3px;
+  -webkit-​​​border-​​​radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0px 1px 8px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0px 1px 8px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px 1px 8px 0 rgba(0, 0, 0, 0.25);
+}
+
+.community-profile .connect-slider-frame .slider-button {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 32px;
+  height: 24px;
+  line-height: 24px;
+  background: #ee5c30;
+  background-image: -webkit-gradient(linear, center top, center bottom, from(#c3c1c1), to(#aeadad));
+  background-image: -webkit-linear-gradient(top, #c3c1c1, #aeadad);
+  background-image: -moz-linear-gradient(top, #c3c1c1, #aeadad);
+  background-image: -o-linear-gradient(top, #c3c1c1, #aeadad);
+  background-image: -ms-linear-gradient(top, #c3c1c1, #aeadad);
+  background-image: linear-gradient(to bottom, #c3c1c1, #aeadad);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c3c1c1', endColorstr='#aeadad',GradientType=0 );
+  -moz-border-radius: 3px;
+  -webkit-​​​border-​​​radius: 3px;
+  border-radius: 3px;
+  border: 0 none;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  color: #fff;
+  font-family:Helvetica;
+  font-size: 10px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  cursor: pointer;
+  -webkit-box-shadow: 2px 0px 3px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 2px 0px 3px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 0px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+.community-profile .connect-slider-frame .slider-button.on {
+  background: #be4b16 url(../../images/soco/button.png) left top repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c24920', endColorstr='#f75e1a',GradientType=0 );
+  border: 0 none;
+  margin-left: 32px;
+  -webkit-box-shadow: -2px 0px 3px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: -2px 0px 3px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: -2px 0px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+.community-profile .connect-slider-frame .slider-button:before {
+  content: normal;
+}
+
+/*
+ * Activity section
+ */
+
+.community .activity .row {
+    padding: 0 0 30px;
+    margin: 0;
+    color: #4D4D4D;
+}
+
+.community .activity .row .comment {
+    margin-top: 0;
+}
+
+.community .activity .type p {
+    float: left;
+    margin: 0 0 20px;
+    padding: 5px 10px;
+    background: #AFAEAE;
+    color: #fff;
+    font-size: 12px;
+}
+
+.community aside .activity .type p {
+    margin: 0;
+}
+
+.community .activity .image {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+.community .activity .desc {
+    float: right;
+    font-size: 12px;
+}
+
+.community .activity.listing .desc {
+    float: left;
+    width: 695px;
+}
+
+.community .sidebar .activity.listing .desc {
+    float: none;
+    width: auto;
+}
+
+.community .desc .time {
+    margin-bottom: 10px;
+}
+.community .desc .time span:nth-child(2) {
+    white-space: nowrap;
+}
+.community .border span {
+    border-left: 1px solid #4D4D4D;
+    margin-right: 7px;
+    padding-left: 7px;
+}
+
+.community .border span:first-child {
+    border-left: 0;
+    padding-left: 0;
+}
+
+.community .desc p {
+    margin: 0;
+}
+
+.community .desc .topic {
+    display: block;
+    margin: 0 0 7px;
+    font-size: 19px;
+    color: #F85E1A;
+}
+
+.community .desc h3 {
+    margin: 8px 0 0;
+}
+
+.community .activity .join.image {
+    width: 190px;
+    margin-bottom: 0;
+}
+
+.community .join img {
+    float: left;
+    margin-right: 10px;
+}
+
+.community .join .desc {
+    float: right;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.community .row .top-comment {
+  padding: 20px 10px 20px 10px;
+}
+
+.community .comment-summary {
+    font-size: 15px;
+}
+
+.community .activity .badges img {
+    float: left;
+    margin-right: 10px;
+}
+
+.community .activity.listing .earned-badge {
+    padding-top: 5px;
+    font-size: 12px;
+}
+
+.community .activity .earned-badge {
+    padding-top: 0;
+    width: auto;
+    font-size: 17px;
+    font-weight: 100;
+}
+
+.community .activity .info {
+    font-size: 14px;
+    margin: 0 0 5px;
+}
+
+.community .activity .event-date {
+    float: left;
+    margin-right: 15px;
+}
+
+.community .activity .text-heading h1,
+.community .activity .text-heading h2 {
+    font-weight: 100;
+    font-style: italic;
+}
+
+.community .activity .text-heading h1 {
+    font-size: 27px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.community .activity .text-heading.event h1 {
+    font-weight: 600;
+    font-style: italic;
+}
+
+.community .activity .text-heading.event h2 {
+    font-style: italic;
+}
+
+.community .activity .text-heading h2 {
+    font-size: 20px;
+}
+
+.community .activity .time {
+    margin: 0 0 10px;
+}
+
+/* product pages */
+
+.overlay {
+    position: absolute;
+    background: url(/etc/designs/geometrixx-outdoors/images/soco/trans-bg.png);
+    color: #fff;
+}
+
+.page-product .content-left {
+    width: 535px;
+    padding: 10px 0 0;
+}
+
+.page-product .content-left h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #4D4D4D;
+    margin: 0 0 15px;
+}
+
+.page-product .content-left p,
+.page-product .content-left li {
+    font-size: 13px;
+    color: #4D4D4D;
+    margin: 0 0 15px;
+}
+
+.page-product .content-left ul {
+    margin: 0;
+}
+
+.page-product .content-left .product-summary {
+    padding-bottom: 15px;
+    margin-bottom: 22px;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.page-product .content-left .product-features ul {
+    float: left;
+    width: 221px;
+    margin-right: 29px;
+    padding-left: 16px;
+}
+
+.page-product .product-summary-header .sort-by {
+    float: right;
+}
+
+.page-product .product-summary-header h2 {
+    float: left;
+}
+
+.page-product .product-comment-row-header {
+    margin-bottom: 10px;
+}
+
+.page-product .product-comment-row-header img {
+    float: left;
+    margin-right: 12px;
+}
+
+.page-product .post-comment {
+    cursor: pointer;
+    padding: 19px 15px 17px 19px;
+    background-color: #EBEBEB;
+    border-radius: 4px;
+    -moz-border-radius: 4px; 
+    -ms-border-radius: 4px; 
+    -o-border-radius: 4px; 
+    -webkit-border-radius: 4px;
+}
+
+.page-product .post-comment span {
+    float: left;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 2px 11px 0 0;
+    background: url(/etc/designs/geometrixx-outdoors/images/soco/forum-reply-bubble-lg.png) no-repeat 0 0;
+}
+
+.page-product .post-comment h2 {
+    float: left;
+    margin: 0;
+    font-size: 19px;
+    font-weight: bold;
+    font-style: italic;
+    color: #4C4C4C;
+    padding-right: 34px;
+    background: url(/etc/designs/geometrixx-outdoors/images/soco/comment-arrow.png) no-repeat right center;
+}
+
+.page-product .post-comment h2.accordion-toggle {
+    width: auto;
+    height: auto;
+    background: url(/etc/designs/geometrixx-outdoors/images/soco/comment-arrow.png) no-repeat right center;
+}
+
+.page-product .post-comment h2.accordion-toggle.expanded {
+    background: url(/etc/designs/geometrixx-outdoors/images/soco/comment-arrow-down.png) no-repeat right center;
+}
+
+.post-comment-form .composer-left-col {
+    width: 125px;
+}
+
+.post-comment-form .composer-right-col {
+    width: 366px;
+}
+
+.post-comment-form textarea {
+    width: 365px;
+    height: 171px;
+}
+
+.page-product .composer-row {
+    margin-bottom: 15px;
+}
+
+.page-product .product-comment-row {
+    margin-bottom: 14px;
+    padding-bottom: 19px;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.page-product .rating-count {
+    float: left;
+    margin-right: 10px;
+    color: #FC8B05;
+}
+
+.page-product .product-comments .ratings-stars {
+    display: inline-block;
+    padding-top: 12px;
+    width: 100px;
+}
+
+.page-product .composer-row .ratings .full {
+    background: url(/etc/designs/geometrixx-outdoors/images/soco/CQ_Stars_Full_16x16.png) no-repeat 0 0;
+}
+
+.page-product .composer-row .empty {
+    background: url(/etc/designs/geometrixx-outdoors/images/soco/CQ_Stars_Empty_16x16.png) no-repeat 0 0;
+}
+
+.page-product .product-comments .ratings .full {
+    background: url(/etc/designs/geometrixx-outdoors/images/soco/CQ_Stars_Full_12x12.png) no-repeat 0 0;
+}
+
+.page-product .product-comments .ratings .empty {
+    background: url(/etc/designs/geometrixx-outdoors/images/soco/CQ_Stars_Empty_12x12.png) no-repeat 0 0;
+}
+
+.page-product .post-comment-form .orange_button {
+    display: inline-block;
+    float: right;
+}
+
+.page-product .product-comment-row-header a {
+    color: #000;
+    font-weight: 600;
+}
+
+.page-product .product-comment-row p {
+    font-size: 12px;
+}
+
+.page-product .product-comment-row .helpful {
+    font-size: 10px;
+    margin: 10px 0 5px;
+}
+
+.page-product .product-comment-row .helpful span {
+    color: #808080;
+}
+
+.page-product .product-comment-row .helpful a {
+    text-decoration: underline;
+}
+
+.page-product .content-right {
+    width: 305px;
+}
+
+.page-product .section-title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.page-product .product-social {
+    margin-top: 10px;
+}
+.page-product .product-social .ratings {
+    margin-right: 20px;
+}
+
+.page-product .product-social .facebook_like {
+    margin-right: 10px;
+}
+
+.recommended-items {
+    margin-bottom: 20px;
+}
+
+.recommended-items .right-title {
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.r-item {
+    position: relative;
+    background: #ccc;
+    width: 145px;
+    height: 153px;
+    float: left;
+    margin-right: 7px;
+    margin-bottom: 7px;
+}
+
+.r-item .text.overlay {
+    padding: 7px;
+    height: 30px;
+}
+
+.r-item .text.overlay p {
+    margin: 0;
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.rate-like {
+    top: 8px;
+    right: 0;
+    padding: 3px 0;
+    width: 46px;
+    height: 15px;
+    text-align: center;
+}
+
+.rate {
+    display: inline-block;
+    padding-right: 3px;
+    border-right: 1px solid #fff;
+    height: 14px;
+    width: 14px;
+    background: url(/etc/designs/geometrixx-outdoors/images/soco/white-rating-star.png) no-repeat 0 0;
+}
+
+.like {
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    background: url(/etc/designs/geometrixx-outdoors/images/soco/white-like-thumbs-up.png) no-repeat 0 0;
+}
+
+.text {
+    bottom: 0;
+    left: 0;
+}
+
+.community-image {
+    position: relative;
+    width: 305px;
+    height: 90px;
+    background: #ccc;
+}
+
+.community-image .text {
+    width: 295px;
+    padding: 6px;
+}
+
+.related-title {
+    margin: 0;
+    padding: 5px 0 5px 5px;
+    font-size: 21px; 
+    font-weight: 300;
+}
+
+.community .member-count {
+    float: right;
+    padding-top: 13px;
+    padding-right: 5px;
+}
+
+.content.gray {
+    background: #F5F5F5;
+    padding: 10px 10px 0;
+}
+
+.com-accordion-title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #8C8C8C;
+    border-bottom: 7px solid #EF5D2B;
+}
+
+.related-communities {
+    margin-bottom: 10px;
+}
+
+.related-title,
+.accordion-toggle {
+    display: inline-block;
+}
+
+.page-product .accordion-toggle {
+    height: 5px;
+    width: 11px;
+    margin-bottom: 6px;
+    margin-left: 3px;
+    background: url(/etc/designs/geometrixx-outdoors/images/soco/product-accordion-toggle.png) no-repeat 0 -5px;
+
+}
+
+.page-product .accordion-toggle.expanded {
+    height: 5px;
+    width: 11px;
+    background: url(/etc/designs/geometrixx-outdoors/images/soco/product-accordion-toggle.png) no-repeat 0 0;    
+}
+
+/* Product tabs selection styles */
+
+.page-product .sort-by label {
+    float: left;
+    padding-top: 3px;
+    margin-right: 10px;
+    font-weight: 100;
+    color: #BEBCBC;
+}
+
+.page-product .styled-select {
+    position: relative;
+    float: left;
+    width: 95px;
+    padding: 2px 2px 2px 8px;
+    background: #BEBCBC;
+    color: #fff;
+    border-radius: 4px;
+    -moz-border-radius: 4px; 
+    -ms-border-radius: 4px; 
+    -o-border-radius: 4px; 
+    -webkit-border-radius: 4px;)
+}
+
+.page-product .styled-select:hover {
+    cursor: pointer;
+}
+
+.page-product .styled-select .select-arrow {
+    position: absolute;
+    top: 8px;
+    right: 7px;
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    background: url(/etc/designs/geometrixx-outdoors/images/soco/product-select-drop-arrow.png) no-repeat 0 0;
+}
+
+.page-product .styled-select .select-drop {
+    position: absolute;
+    bottom: -18px;
+    left: 0px;
+    padding: 2px 16px;
+    background: #BEBCBC;
+}
+
+/* Community Start
+------------------------------------------------------------------------*/
+
+.community-start .forum #composer,
+.community-start header.soco-event-header,
+.community-start .gray-button.event {
+    display: none;
+}
+
+/* Forum */
+
+.community-start .forum .info-column,
+.community-start .forum .post-summary {
+    width: 460px;
+}
+
+/* Calendar */
+
+.community-start .soco-calendar-detail {
+    width: 100%;
+}
+
+.community-start .event-accordion.right-col {
+    width: 525px;
+}
+
+/* Company pages
+------------------------------------------------------------------------*/
+
+.page-company .par .section.title {
+    overflow: hidden;
+    margin-bottom: 0;
+    border-bottom: 7px solid #ef5a28;
+    padding-bottom: 4px;
+}
+
+.page-company .par .section.title h1 {
+    float: left;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 100;
+    color: #8c8c8c;
+}
+
+/* text component */
+.page-company .section.text {
+    border-bottom: 1px solid #eee;
+}
+
+.page-company .section.text .row {
+    padding: 15px;
+    border-bottom: 0 none;
+    margin-bottom: 0;
+}
+
+.page-company .page-par .colctrl-2c-c0,
+.page-company .page-par .colctrl-2c-c1 {
+    width: 285px;
+}
+
+.page-company .page-par-left .colctrl-2c-c0 {
+    margin-right: 30px;
+}
+
+/* recommend article component */
+.page-company .recommend_article {
+    border: 6px solid #ececec;
+}
+.page-company .recommend_article .text h3 {
+    text-transform: capitalize;
+    font-size: 28px;
+}
+
+.page-company .recommend_article .text .description {
+    float: left;
+    width: 350px;
+    margin-bottom: 20px;
+    color: #989898;
+    line-height: 18px;
+}
+
+.page-company .recommend_article .text .button {
+    float: right;
+    margin-bottom: 20px;
+}
+
+/* Company: Our Story */
+.page-company.our-story .page-aside {
+    padding-top: 30px;
+}
+
+.page-company.our-story .page-aside .image {
+    border: 6px solid #eee;
+}
+
+/* Company: The Team */
+.page-company.the-team .textimage {
+    float: left;
+    position: relative;
+    margin: 0 0 10px 10px;
+}
+/*
+    The following strange way to do the floating with absolute positioning
+    makes the parsys drop zone displayed below the floated elements.
+*/
+.page-company.the-team .textimage:nth-of-type(n+0) {
+    float: none;
+    width: 190px;
+    margin: 0 0 15px 0;
+}
+.page-company.the-team .textimage:nth-of-type(3n+1) {
+    position: absolute;
+    margin-left: 205px;
+    margin-top: 0;
+}
+.page-company.the-team .textimage:nth-of-type(3n+2) {
+    position: absolute;
+    margin-left: 410px;
+    margin-top: 0;
+}
+
+.page-company.the-team .textimage br {
+    display: none;
+}
+
+.page-company.the-team .textimage .image {
+    margin: 0;
+    padding: 0;
+}
+
+.page-company.the-team .textimage .text {
+    position: absolute;
+    padding: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #fff;
+    background: #131313;
+    width: 100%;
+}
+.page-company.the-team .textimage .text b {
+    display: block;
+}
+
+.page-company.the-team .textimage .text p {
+    margin: 0;
+    padding: 6px 6px 6px 8px;
+}
+
+/* Subscription Management Page
+------------------------------------------------------------------------*/
+
+.subscriptionlist .searchQueryDiv .searchInputContainer div.subscriptionSearchImg {
+    background:url("/etc/designs/geometrixx-outdoors/images/soco/magnifier.png") no-repeat;
+    background-position:left center;
+    background-repeat:no-repeat no-repeat;
+    background-size:1.1rem;
+    height: 1.1rem;
+    width: 11%;
+    margin-top: 3px;
+    display: inline-block;
+}
+
+.subscriptionlist .subscriptionEntryListDiv .paginateAndSelect .currentPageNumberDiv {
+    color:#ffffff;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-right: 5px;
+    padding-left: 5px;
+    background-image: -webkit-gradient(linear, center top, center bottom, from(#c24920), to(#f75e1a));
+    background-image: -webkit-linear-gradient(top, #c24920, #f75e1a);
+    background-image: -moz-linear-gradient(top, #c24920, #f75e1a);
+    background: #BE4B16 url(/etc/designs/geometrixx-outdoors/images/soco/button.png) left top repeat-x;
+    display:inline-block;
+}

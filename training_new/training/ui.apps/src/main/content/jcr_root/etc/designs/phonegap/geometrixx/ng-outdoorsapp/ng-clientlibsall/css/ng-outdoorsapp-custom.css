@@ -1,0 +1,139 @@
+/*
+ ADOBE CONFIDENTIAL
+ __________________
+
+  Copyright 2013 Adobe Systems Incorporated
+  All Rights Reserved.
+
+ NOTICE:  All information contained herein is, and remains
+ the property of Adobe Systems Incorporated and its suppliers,
+ if any.  The intellectual and technical concepts contained
+ herein are proprietary to Adobe Systems Incorporated and its
+ suppliers and are protected by trade secret or copyright law.
+ Dissemination of this information or reproduction of this material
+ is strictly forbidden unless prior written permission is obtained
+ from Adobe Systems Incorporated.
+ */
+
+
+a {
+	text-decoration: none;
+}
+
+.hidden {
+	display: none;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+#content {
+	padding: 0;
+}
+#content a,
+#content p {
+	margin: 0 .3em;
+}
+
+img {
+	max-width: 100%;
+}
+
+.topcoat-icon--back {
+	background: url("../img/back.svg") no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+.topcoat-icon--next {
+	background: url("../img/next.svg") no-repeat;
+	background-size: cover;
+}
+.topcoat-icon--call {
+	background: url("../img/call.svg") no-repeat;
+	background-size: cover;
+}
+.topcoat-icon--location {
+	background: url("../img/location.svg") no-repeat;
+	background-size: cover;
+}
+.topcoat-icon--call-light {
+	background: url("../img/call-white.svg") no-repeat;
+	background-size: cover;
+}
+.topcoat-icon--location-light {
+	background: url("../img/location-white.svg") no-repeat;
+	background-size: cover;
+}
+.topcoat-icon--user {
+    background: url("../img/user.svg") no-repeat;
+    background-size: cover;
+}
+
+/* Override list styles */
+.topcoat-list__header {
+	background-color:rgba(0,0,0,0.55);
+	color: #fff;
+	text-shadow: none;
+}
+
+/* Override Button styles */
+.topcoat-button--cta {
+	border: 1px solid #8F4816;
+	background-color: rgba(219,80,21,0.75);
+}
+
+.topcoat-button--cta#reset {
+	border: 1px solid #CED0CF;
+	background-color: rgba(206, 208, 207, 1);
+}
+
+.topcoat-button--cta#create {
+	width: 100%;
+}
+
+.topcoat-button--cta:focus {
+	border: 1px solid #BF5F00;
+	box-shadow: inset 0 1px rgba(255,255,255,0.36), 0 0 0 2px #F8AC5E;
+}
+
+.topcoat-button--cta:hover {
+	background-color: rgba(255, 80, 21, 0.75);
+}
+
+.topcoat-button--cta:active {
+	background-color: rgba(195, 86, 22, 0.75);
+}
+
+/* Override menu bar */
+.topcoat-navigation-bar.small,
+.topcoat-navigation-bar__item.small {
+	height: 2.75rem;
+	line-height: inherit;
+}
+
+.topcoat-navigation-bar {
+	padding: 0;
+}
+
+.topcoat-icon-button--quiet.small {
+	height: 2.75rem;
+	line-height: .5rem;
+	position: relative;
+	top: 7px;
+	padding: 0 1rem;
+}
+
+.ng-navigator-bar-search {
+	margin-right: 0;
+}
+
+.topcoat-navigation-bar__title {
+	line-height: 2.75rem;
+	color: #9DA09F;
+}
+
+.topcoat-tab-bar__button {
+	border-color: #ccc;
+}

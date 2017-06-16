@@ -1,0 +1,125 @@
+/*
+ ADOBE CONFIDENTIAL
+ __________________
+
+  Copyright 2013 Adobe Systems Incorporated
+  All Rights Reserved.
+
+ NOTICE:  All information contained herein is, and remains
+ the property of Adobe Systems Incorporated and its suppliers,
+ if any.  The intellectual and technical concepts contained
+ herein are proprietary to Adobe Systems Incorporated and its
+ suppliers and are protected by trade secret or copyright law.
+ Dissemination of this information or reproduction of this material
+ is strictly forbidden unless prior written permission is obtained
+ from Adobe Systems Incorporated.
+ */
+
+.product-details .product-header {
+    line-height: 3rem;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    background-color: white;
+    box-shadow: inset 0 -1px #9daca9, 0 1px #d6dcdb;
+}
+
+.product-details .product-header .name {
+    font-size: 50%;
+}
+
+.product-details .product-header .price {
+    float: right;
+    text-align: right;
+}
+
+.product-details .product-image {
+    background-color: white;
+    margin: 1rem 0.5rem;
+    padding-bottom: 0.5rem;
+    vertical-align: middle;
+}
+
+.product-details .product-image span {
+    text-align: center;
+    display: block;
+}
+
+.product-details .product-image img {
+    background-color: white;
+    padding: 0.25rem;
+}
+
+.product-details .product-image .metrics {
+    padding: 0.5rem;
+}
+
+.product-details .product-image .metrics .metrics-button {
+    border: 1px solid #aaaaaa;
+    height: 2rem;
+    border-radius: 1rem;
+    padding: .3rem 0.5rem;
+    margin-left: 1rem;
+    display: inline;
+    min-width: 4rem;
+}
+
+.product-details .product-image .metrics .thumbsup_img_src {
+    content:url("../img/ThumbUp_24.svg");
+}
+
+.product-details .product-image .metrics .comment_img_src {
+    content:url("../img/Comment_18.svg");
+}
+
+.product-details .product-image .metrics .add-to-cart {
+    position:relative;
+}
+
+.product-details .product-image .metrics .clear {
+    opacity: 0;
+}
+
+.product-details .product-image .metrics .add-to-cart img {
+    position: absolute;
+    right: 0;
+}
+
+.product-details .product-image .metrics .add_img_src {
+    content:url("../img/Add-Circle_18.svg");
+}
+
+.product-details .product-image .metrics .added_img_src {
+    content:url("../img/Check-Circle_18_orange.svg");
+}
+
+.product-details .product-image .metrics .add-to-cart {
+    float: right;
+    margin-top: -0.6rem;
+}
+
+.product-details .product-image .metrics .metrics-button img {
+    vertical-align: middle;
+}
+
+.product-details .product-details-information {
+    padding: 0 1rem;
+    box-shadow: 1px 1px #9daca9, 1px 1px #d6dcdb;
+}
+
+.product-details .product-details-information > h4 {
+    color: #aaaaaa;
+    display: inline;
+    margin-top: 0;
+    padding-top: 0;
+    font-weight: normal;
+}
+
+/**
+Below are the breakpoints for different size screens so that the cards will look
+good regardless of changing view port sizes.
+**/
+@media screen and (min-width: 320px) {
+    .product-details .product-header .name {
+        font-size: 100%;
+    }
+}

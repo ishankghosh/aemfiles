@@ -1,0 +1,64 @@
+/*
+ ADOBE CONFIDENTIAL
+ __________________
+
+  Copyright 2016 Adobe Systems Incorporated
+  All Rights Reserved.
+
+ NOTICE:  All information contained herein is, and remains
+ the property of Adobe Systems Incorporated and its suppliers,
+ if any.  The intellectual and technical concepts contained
+ herein are proprietary to Adobe Systems Incorporated and its
+ suppliers and are protected by trade secret or copyright law.
+ Dissemination of this information or reproduction of this material
+ is strictly forbidden unless prior written permission is obtained
+ from Adobe Systems Incorporated.
+ */
+
+.aem-AuthorLayer-Edit {
+    height: auto;
+}
+
+.aem-AuthorLayer-Edit body {
+    height: auto;
+}
+
+.aem-AuthorLayer-Edit .page-content {
+    position: inherit;
+    width: 100%;
+    height: auto;
+}
+
+.aem-AuthorLayer-Edit .page-content > .content-par {
+    height: auto;
+}
+
+.aem-AuthorLayer-Edit .ng-locations,
+.aem-AuthorLayer-Edit .locations {
+    position: inherit;
+    height: auto;
+}
+
+.aem-AuthorLayer-Edit .location-list,
+.aem-AuthorLayer-Edit .location-search {
+    position: inherit;
+}
+
+.aem-AuthorLayer-Edit .locations .location-map,
+.aem-AuthorLayer-Edit .locations .location-map div {
+    height: auto;
+}
+
+.aem-AuthorLayer-Edit .location-map.ng-hide {
+    display: block;
+    visibility: hidden;
+}
+
+.aem-AuthorLayer-Edit .gm-style {
+    height: auto;
+    position: inherit;
+}
+
+.aem-AuthorLayer-Edit .app-tab-bar {
+    position: inherit;
+}

@@ -1,0 +1,203 @@
+/*
+ * Forms.css
+ * Form default styles
+ */
+
+/* Overrides of Geometrixx Outdoors page component form styles */
+.community .par form {
+    margin-top: 0;
+}
+
+.community .par form input {
+    height: auto;
+}
+
+.community .par form textarea {
+    background: #fff;
+}
+
+/* CQ Form component */
+.community form .form_row,
+form .form_row {
+    text-align: left;
+    line-height:normal;
+    clear: both;
+    width: 100%;
+    padding-top: 10px;
+}
+
+/* left column */
+.community form .form_leftcol {
+    padding-left: 9px;
+    float: left;
+    width: 110px;
+}
+.community form .form_leftcollabel {
+    font-weight: 600;
+    float: left;
+    color: #414042;
+    width: 85px;
+}
+.community form .form_leftcol label {
+    line-height: 18px;
+}
+.community form .form_leftcolmark {
+    float: left;
+    padding-left: 0px;
+    font-weight: normal;
+    width: 10px;
+}
+
+/* right column */
+.community form .form_rightcol {
+    clear: none;
+    margin-left: 140px;
+}
+.community form .form_rightcol_left {
+    float: left;
+    width: 105px;
+}
+.community form .form_rightcol_middle {
+    float: left;
+    width:23px;
+}
+.community form .form_rightcol_right {
+    float: left;
+    width: 105px;
+}
+.community form .form_rightcol .form-readonly {
+    line-height: 18px;
+}
+
+/* text field, textarea */
+.community form .form_field_text,
+.community form .form_field_textarea,
+.community-landing form .form_field_text,
+.community-landing form .form_field_textarea {
+    /*width: auto;*/
+    background: #fff;
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    color: black;
+    border-color: #999;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 2px;
+}
+.community form .form_field_text {
+    padding: 5px 0 5px 5px;
+}
+.community form .form_field_textarea {
+    padding-right: 0px;
+    resize:none;
+}
+
+/* captcha */
+.community div.form_captchatimer {
+    float: left;
+    border: 1px solid #CCCCCC;
+}
+.community div.form_captchatimer_bar {
+    float: left;
+    background-color:#CCCCCC;
+    height: 8px;
+}
+.community div.form_captcha_input {
+    float: left;
+    vertical-align: baseline;
+    padding-top: 4px;
+}
+.community div.form_captcha_img {
+    float: left;
+    vertical-align: baseline;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.community div.form_captcha_refresh {
+    float: left;
+    padding-top: 4px;
+}
+
+/* File field */
+.community form .form_field_file {
+    background: none;
+}
+
+/* Submit / reset buttons */
+.community form .form_button_submit,
+.community form .form_button_reset {
+    float: right;
+}
+
+.community form .end .form_button_reset {
+    margin-right: 10px;
+}
+
+/* disabled input */
+.community input[type="button"]:disable,
+.community input[type="submit"]:disable,
+.community input[type="reset"]:disable,
+.community input[type="file"]:disable::-webkit-file-upload-button {
+    color:graytext;
+    cursor:default;
+}
+
+.community form a.clear-form {
+    color: #F26522;
+    text-decoration: none;
+}
+
+.product-social>div {
+    display: inline-table;
+    vertical-align: bottom;
+}
+
+/* Styled file input field with fake fields */
+.community .fake-file-upload {
+    position: relative;
+    margin-top: 5px;
+    width: 290px;
+}
+.community .fake-file-upload div {
+    display: inline;
+}
+.community .fake-file-upload input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 190px;
+    z-index: 2;
+    opacity: 0.001;
+    cursor: pointer;
+}
+.community .fake-file-upload button {
+    width: 100px !important;
+    padding: 4px !important;
+}
+form.poll-form input[type='button'].poll-submit{
+	margin: 8px 0;
+}
+.poll-result-item .poll-result-bar {
+	background-color: #E57133;
+}
+.poll-result-item .poll-result-bar.selected {
+	background-color: #F2A72A;
+}
+.poll-form .poll-option {
+	vertical-align: inherit;
+}      
+.poll-form .poll-option-label {
+	margin: 3px;                           
+}
+
+.community form #jcrEventTitle {
+    width: 500px;
+}
+
+.community form #event-basics-start-input {
+    width: 150px;
+}
+
+.community form #event-basics-end-input {
+    width: 150px;
+}

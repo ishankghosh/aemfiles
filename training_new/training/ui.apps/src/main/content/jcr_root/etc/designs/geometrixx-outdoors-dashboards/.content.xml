@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:doctype="html_5"
+        cq:lastModified="{Date}2012-02-03T11:01:33.241-08:00"
+        cq:lastModifiedBy="admin"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Geometrixx Outdoors Dashboard Design"
+        jcr:uuid="f0dcd35e-2a12-42c7-9c59-55303b55e3be"
+        sling:resourceType="wcm/core/components/designer">
+        <page_dashboard jcr:primaryType="nt:unstructured">
+            <breadcrumb
+                jcr:lastModified="{Date}2011-11-07T14:57:26.266+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="geometrixx-outdoors/components/page/breadcrumb"
+                absParent="2"
+                minItems="2"
+                relParent="0"/>
+            <par
+                jcr:lastModified="{Date}2012-02-01T09:28:50.575-08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[/libs/foundation/components/carousel,/libs/foundation/components/chart,/libs/foundation/components/download,/libs/foundation/components/flash,/libs/foundation/components/image,/libs/foundation/components/list,/libs/foundation/components/mvt,/libs/foundation/components/reference,/libs/foundation/components/sitemap,/libs/foundation/components/slideshow,/libs/foundation/components/table,/libs/cq/tagging/components/tagcloud,/libs/foundation/components/text,/libs/foundation/components/textimage,/apps/geometrixx-outdoors/components/title,/libs/foundation/components/video,/libs/cq/activitystreams/components/useractivities,/apps/geometrixx-outdoors/components/colctrl/virtual/2cols,/apps/geometrixx-outdoors/components/colctrl/virtual/3cols,/apps/geometrixx-outdoors/components/colctrl,/apps/geometrixx-outdoors/components/tabctrl,/libs/foundation/components/form/address,/libs/foundation/components/form/captcha,/libs/foundation/components/form/checkbox,/libs/foundation/components/form/dropdown,/libs/foundation/components/form/upload,/libs/foundation/components/form/start,/libs/foundation/components/form/hidden,/libs/foundation/components/form/imagebutton,/libs/foundation/components/form/image,/libs/foundation/components/form/link,/libs/foundation/components/form/password,/libs/foundation/components/form/radio,/libs/foundation/components/form/submit,/libs/foundation/components/form/tags,/libs/foundation/components/form/text,/libs/cq/workflow/components/form/workflow_submit,/apps/geometrixx-outdoors/components/nav_products,/apps/geometrixx-outdoors/components/recommend/recommend_article,/apps/geometrixx-outdoors/components/recommend/recommend_product,/apps/geometrixx-outdoors/components/recommend/recommend_social,/libs/cq/personalization/components/teaser]">
+                <colctrl
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="geometrixx-outdoors/components/colctrl"
+                    layouts="2;colctrl-2c&#x9;2 Columns&#xa;3;colctrl-3c&#x9;3 Columns"/>
+                <forum jcr:primaryType="nt:unstructured">
+                    <searchbox
+                        jcr:lastModified="{Date}2012-01-20T19:21:04.558+01:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="collab/forum/components/searchbox"
+                        searchResultPath="/content/geometrixx-outdoors/en/community/search"/>
+                </forum>
+                <image
+                    jcr:primaryType="nt:unstructured"
+                    maxHeight="400"
+                    maxWidth="926"/>
+                <section jcr:primaryType="nt:unstructured"/>
+                <tagcloud
+                    jcr:lastModified="{Date}2012-01-20T18:37:53.716+01:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/tagging/components/tagcloud"
+                    linkTemplate="/content/geometrixx-outdoors/en/toolbar/search.html?tag=${tagid}&amp;path=${searchpath}"
+                    showOnlyLeafTags="true"/>
+                <title
+                    jcr:lastModified="{Date}2010-08-25T17:56:27.191+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="geometrixx-outdoors/components/title"
+                    defaultType="small"/>
+            </par>
+            <search
+                jcr:lastModified="{Date}2011-11-07T14:57:26.266+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="geometrixx-outdoors/components/page/search"
+                searchPath="/content/geometrixx-outdoors/en/toolbar/search"/>
+            <toolbar
+                jcr:lastModified="{Date}2012-01-13T15:30:19.113+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/toolbar"
+                absParent="2"/>
+            <topnav
+                jcr:lastModified="{Date}2011-11-03T15:21:38.308+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="geometrixx-outdoors/components/page/topnav"
+                absParent="2"/>
+            <userinfo
+                jcr:lastModified="{Date}2011-11-03T15:14:26.787+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="geometrixx-outdoors/components/content/userinfo"
+                scorePage="/content/geometrixx-outdoors/en/user/score"/>
+        </page_dashboard>
+        <page jcr:primaryType="nt:unstructured">
+            <par
+                jcr:lastModified="{Date}2012-02-03T08:26:33.443-08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[/libs/foundation/components/chart,/libs/foundation/components/image,/libs/foundation/components/text,/libs/foundation/components/title,/libs/foundation/components/parsys/colctrl/virtual/2cols,/libs/foundation/components/parsys/colctrl/virtual/3cols,/libs/foundation/components/parsys/colctrl,/apps/geometrixx-outdoors/components/tabctrl,/libs/cq/reporting/components/compreport/comptypecol,/libs/cq/reporting/components/compreport/lastmodcol,/libs/cq/reporting/components/compreport/pagecol]">
+                <section jcr:primaryType="nt:unstructured"/>
+                <colctrl
+                    jcr:lastModified="{Date}2012-02-03T11:01:33.240-08:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys/colctrl"
+                    layouts="2;colctrl-2c&#x9;2 Columns&#xa;3;colctrl-3c&#x9;3 Columns"/>
+                <col_end13282956932410
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys/colctrl"
+                    controlType="end"/>
+            </par>
+        </page>
+    </jcr:content>
+    <clientlibs_base/>
+    <clientlibs_desktop_v1/>
+    <clientlibs_mobile_v1/>
+    <favicon.ico/>
+    <images/>
+    <touchicon.png/>
+</jcr:root>

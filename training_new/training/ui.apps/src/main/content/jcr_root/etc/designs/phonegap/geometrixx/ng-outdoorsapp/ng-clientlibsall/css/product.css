@@ -1,0 +1,148 @@
+/*
+ ADOBE CONFIDENTIAL
+ __________________
+
+  Copyright 2013 Adobe Systems Incorporated
+  All Rights Reserved.
+
+ NOTICE:  All information contained herein is, and remains
+ the property of Adobe Systems Incorporated and its suppliers,
+ if any.  The intellectual and technical concepts contained
+ herein are proprietary to Adobe Systems Incorporated and its
+ suppliers and are protected by trade secret or copyright law.
+ Dissemination of this information or reproduction of this material
+ is strictly forbidden unless prior written permission is obtained
+ from Adobe Systems Incorporated.
+ */
+.product-menu-item {
+    width: 49%;
+    max-width: 25em;
+    max-height: 25em;
+    min-width: 3rem;
+    min-height: 3rem;
+    position: relative;
+    background: #e5e9e8;
+    margin: 0 0.1rem 0 0;
+    border: solid 0.1rem #e5e9e8;
+}
+
+.product-menu-item > div {
+    position: relative;
+    width: 100%;
+    height: 0;
+    max-height: 20em;
+    padding-top: 0.2rem;
+	padding-bottom: 100%;
+    overflow: hidden;
+    background: #ffffff;
+    margin: 0.4rem 0.4rem 0 0;
+    z-index: 100;
+    box-shadow: 1px 1px 1px #aaaaaa;
+}
+
+.product-menu-item > div > img {
+    width: 100%;
+    /* Edge around image */
+    margin-top: 0.1rem;
+    padding: 0 0.3rem;
+}
+
+.product-menu-item .product-info-bar {
+    position: absolute;
+    width: 100%;
+    height: 2.5rem;
+    z-index: 200;
+    left: 0;
+    padding: 0;
+    bottom: 0;
+    box-shadow: 1px 1px 1px #aaaaaa;
+}
+
+.product-menu-item .product-preview-price {
+    float: left;
+    margin-top: 0;
+    line-height: 2.5rem;
+    bottom: 1.5rem;
+    padding: 0 0 0 1rem;
+    color: #999999;
+    font-weight: bold;
+}
+
+.product-menu-item .product-button {
+    float: right;
+    margin-right: 1rem;
+    background: url("../img/ThumbUp_24.svg") right center;
+    background-size: 1rem;
+    background-repeat: no-repeat;
+    min-height: 2rem;
+    min-width: 2rem;
+    fill: #00ff00;
+}
+
+.product-menu-item .product-button.liked {
+    background: url("../img/ThumbUp_24_orange.svg") right center;
+    background-repeat: no-repeat;
+    background-size: 1.8rem;
+}
+
+/**
+Below are the breakpoints for different size screens so that the cards will look
+good regardless of changing view port sizes.
+**/
+@media screen and (min-width: 400px) {
+    .product-menu-item .product-preview-price {
+        font-size: 150%;
+        line-height: 2rem;
+    }
+    .product-menu-item .product-info-bar {
+        height: 2rem;
+    }
+    .product-menu-item .product-button {
+        min-height: 2rem;
+        min-width: 2rem;
+        background-size: 1rem;
+    }
+    .product-menu-item .product-button.liked {
+        background-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width: 575px) {
+    .product-menu-item .product-preview-price {
+        font-size: 200%;
+        line-height: 3rem;
+    }
+    .product-menu-item .product-info-bar {
+        height: 3rem;
+    }
+    .product-menu-item .product-button {
+        min-height: 3rem;
+        min-width: 3rem;
+        background-size: 1.5rem;
+    }
+    .product-menu-item .product-button.liked {
+        background-size: 2.1rem;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .product-menu-item .product-preview-price {
+        font-size: 300%;
+        line-height: 4rem;
+    }
+    .product-menu-item .product-info-bar {
+        height: 4rem;
+    }
+    .product-menu-item .product-button {
+        min-height: 4rem;
+        min-width: 4rem;
+        background-size: 2rem;
+    }
+    .product-menu-item .product-button.liked {
+        background-size: 2.3rem;
+    }
+
+    .product-menu-item > div {
+        padding-bottom: 95%;
+    }
+}

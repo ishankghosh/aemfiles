@@ -1,0 +1,156 @@
+/* Login page */
+
+.page .ui-dialog.sociallogin-dialog {
+    width: 564px;
+    padding: 36px 42px 36px;
+    background: #6d6d6d; /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(120, 120, 120, .85) 0%, rgba(84, 84, 84, .85) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(109, 109, 109, .85)), color-stop(100%, rgba(84, 84, 84, .855))); /* Chrome, Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(120, 120, 120, .85) 0%, rgba(84, 84, 84, .85) 100%); /* Chrome10+, Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(120, 120, 120, .85) 0%, rgba(84, 84, 84, .85) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(120, 120, 120, .85) 0%, rgba(84, 84, 84, .85) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(120, 120, 120, .85) 0%, rgba(84, 84, 84, .85) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#787878', endColorstr='#545454', GradientType=0 ); /* IE6-8 */
+    color: #fff;
+    font-size: 12px;
+    border-radius: 10px;
+    -moz-box-shadow: 0 0 31px 3px rgba(0, 0, 0, .65);
+    -webkit-box-shadow: 0 0 31px 3px rgba(0, 0, 0, .65);
+    box-shadow: 0 0 31px 3px rgba(0, 0, 0, .65);
+    z-index: 1000;
+    position: fixed;
+    border: none;
+}
+
+.page .ui-dialog.sociallogin-dialog .ui-dialog-content {
+    color: #fff;
+    overflow: hidden;
+}
+
+.page .ui-dialog.sociallogin-dialog .form_leftcol {
+    /* These elements were pushing everything down */
+    display: none;
+}
+
+.page .ui-dialog.sociallogin-dialog .ui-dialog-titlebar {
+    background: transparent;
+    height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.page .ui-dialog.sociallogin-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close {
+    right: -40px;
+    top: -20px;
+}
+
+.page .ui-widget-content .ui-icon.ui-icon-closethick {
+    background: url(/etc/designs/geometrixx-outdoors/images/soco/tag-remove.png) no-repeat 0 0;
+}
+
+.page .ui-dialog.sociallogin-dialog .cqlogin {
+    width: 100%;
+    background: none;
+}
+
+.page .ui-dialog.sociallogin-dialog .colctrl-2c  {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #666768;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.page .ui-dialog.sociallogin-dialog .title {
+    margin-bottom: 12px;
+    border-bottom: 3px solid #808181;
+}
+
+.page .ui-dialog.sociallogin-dialog .title h2 {
+    font-size: 19px;
+    text-transform: uppercase;
+    margin: 0 0 2px;
+    font-style: italic;
+    font-weight: 100;
+    color: #fff;
+}
+
+.page .ui-dialog.sociallogin-dialog .colctrl-2c-c0 .text {
+    margin-bottom: 10px;
+}
+
+.page .ui-dialog.sociallogin-dialog .colctrl-2c-c0 {
+    width: 230px;
+    padding-right: 45px;
+    border-right: 1px solid #666768;
+    border-right: 1px solid rgba(255, 255, 255, .1);
+}
+
+.page .ui-dialog.sociallogin-dialog .colctrl-2c-c0 label {
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+.page .ui-dialog.sociallogin-dialog form .form_field_text {
+    width: 216px;
+    border: 0;
+    margin-top: 4px;
+    padding: 4px 7px;
+    color: #5a5a5a;
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+}
+
+.page .ui-dialog.sociallogin-dialog #login p {
+    margin-bottom: 3px;
+    margin-top: 5px;
+}
+
+.page .ui-dialog.sociallogin-dialog .colctrl-2c-c1 {
+    float: left;
+    width: 230px;
+    margin-left: 46px;
+    padding-right: 12px;
+}
+
+.page .ui-dialog.sociallogin-dialog .colctrl-2c-c1 ul {
+    padding-left: 16px;
+}
+
+.page .ui-dialog.sociallogin-dialog .colctrl-2c-c1 ul li {
+    margin-bottom: 10px;
+}
+
+.page .ui-dialog.sociallogin-dialog .colctrl-2c .form_button_submit {
+    float: left;
+    margin-top: 4px;
+    margin-bottom: 23px;
+    padding: 5px 10px;
+    background: #BE4B16 url(/etc/designs/geometrixx-outdoors/images/soco/button.png) left top repeat-x;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 11px;
+    text-transform: uppercase;
+    line-height: 15px;
+}
+
+.page .ui-dialog.sociallogin-dialog .submit.section .form_row {
+    float: left;
+    margin-right: 10px;
+}
+
+.page .ui-dialog.sociallogin-dialog .login_facebook {
+    padding: 5px 6px 6px 29px;
+    background: url(/etc/designs/geometrixx-outdoors/images/soco/facebook-login.png) no-repeat;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+}
+
+.page .ui-dialog.sociallogin-dialog .login_twitter {
+    padding: 5px 6px 6px 33px;
+    background: url(/etc/designs/geometrixx-outdoors/images/soco/twitter-login.png) no-repeat;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+}

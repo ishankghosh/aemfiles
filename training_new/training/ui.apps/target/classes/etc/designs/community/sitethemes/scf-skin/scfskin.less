@@ -1,0 +1,293 @@
+.scf {
+	font-family: helvetica, arial;
+    color: @text-color;
+}
+
+.scf h4 {
+	font-size: 14px;
+	color: @headings-color;
+	margin: 10px 0;
+}
+
+.scf h3 {
+    color: @headings-color;
+}
+
+.scf h2 {
+	font-size: 24px;
+	color: @headings-color;
+	margin: 0px;
+	font-weight: 100;
+}
+
+.scf .scf-link {
+	font-size: 14px;
+	color: @link-color;
+	cursor: pointer;
+	
+}
+.scf .scf-link:visited {
+	color: @text-color;
+}
+.scf .scf-link:hover {
+	text-decoration: underline;
+    color: @link-hover-color;
+}
+
+.scf a {
+	font-size: 12px;
+	color: @link-color;
+	text-decoration: none;
+}
+
+.scf .scf-quiet {
+	font-size: 12px;
+	color: @brand-primary;
+}
+
+.scf button {
+	min-width: 100px;
+	min-height: 35px;
+	color: @btn-primary-color;
+	background: @btn-primary-bg;
+	text-decoration: none;
+	border: none;
+	outline: none;
+    background-repeat: no-repeat;
+    filter: none;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.scf .btn{
+    border-radius: 0px;
+    padding: 0 5px;
+}
+
+.scf input[type='submit'] {
+	min-width: 100px;
+	min-height: 35px;
+	color: @btn-primary-color;
+	background: @btn-primary-bg;
+	text-decoration: none;
+	border: none;
+	outline: none;
+    background-repeat: no-repeat;
+    filter: none;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.scf-label {
+	font-size: @font-size-base;
+}
+input[type="text"].scf-input {
+	min-width: 200px;
+	height: 35px;
+	border: 1px solid @input-border;
+    color: @input-color;
+	padding: 1px 4px;
+    background-color: @input-bg;
+}
+.scf button:hover {
+	background: @link-hover-color;
+}
+
+.scf input[type='submit']:hover {
+	background: @link-hover-color;
+}
+
+.scf button:active {
+	background: @link-hover-color;;
+}
+
+.scf input[type='submit']:active {
+	background: @link-hover-color;;
+}
+
+.scf button:disabled {
+	background: @btn-link-disabled-color;
+}
+
+.scf input[type='submit']:disabled {
+	background: @btn-link-disabled-color;
+}
+
+.scf button[type='reset'] {
+	color: @btn-primary-color;
+	background-color: @btn-primary-bg;
+}
+
+.scf button[type='reset']:hover {
+	background-color: @link-hover-color;
+}
+
+.scf button[type='reset']:active {
+	background-color: @link-hover-color;
+}
+
+.scf button[type='reset'][disabled="disabled"] {
+	background-color: @btn-link-disabled-color;
+}
+
+.scf-is-new {
+    background-color: @gray-lighter;
+	padding: @panel-body-padding;
+	border-radius: @panel-border-radius;
+	border-color: @gray-lighter;
+    border-width:1px;
+    border-style:solid;
+    color: @gray-darker;
+}
+
+.scf-modal-screen {
+	z-index: @zindex-modal;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.6;
+	background-color: @modal-backdrop-bg;
+}
+.scf-modal-dialog {
+	z-index: @zindex-modal;
+	position: fixed;
+	top:100px;
+	left: 100px;
+	padding: @modal-inner-padding;
+	background-color: @modal-content-bg;
+    color: @text-color;
+	text-align: center;
+    border: 1px solid @modal-content-border-color;
+    border-radius: @border-radius-large;
+}
+
+.scf-modal-dialog input, .scf-modal-dialog select, 
+.scf-modal-dialog option, .scf-modal-dialog textarea {
+    color: @input-color;
+}
+
+.scf-modal-dialog h2 {
+	color: @headings-color;
+	margin-bottom: 10px;
+	text-align: left;
+	line-height: 24px;
+    line-height: @modal-title-line-height;
+    border-bottom: 1px solid @modal-header-border-color;
+}
+
+.scf-modal-close {
+    font-size: (@font-size-base * 1.5);
+    font-weight: @close-font-weight;
+    line-height: 1;
+    color: @close-color;
+    text-shadow: @close-text-shadow;
+    .opacity(.2);
+
+    &:hover,
+    &:focus {
+        color: @close-color;
+        text-decoration: none;
+        cursor: pointer;
+        .opacity(.5);
+    }
+}
+
+.scf-error {
+	border: 2px solid !important;
+	border-color: @brand-danger !important;
+}
+
+.scf-js-error-message {
+	background-color: @brand-danger;
+	color: @text-color;
+    border-radius:6px;
+}
+.scf-selected-tag {
+	padding: 5px;
+	margin-right: 5px;
+	background-color: @btn-info-bg;
+	color: @btn-info-color;
+	font-size: 13px;
+}
+
+/****** pagination styles **********/
+.scf-pages-list:first-child {
+    border-top: solid;
+    border-width: 1px;
+    border-color: @pagination-border;
+}
+.scf-pages-list:last-child {
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: @pagination-border;
+}
+.scf-page {
+    cursor: pointer;
+    display: inline-block;
+    padding: 1px 3px;
+    border: 1px solid @pagination-border;
+    min-width: 16px;
+    text-align: center;
+}
+a.scf-currentPage {
+    color: @pagination-active-color;
+    border: none;
+    background: @pagination-active-bg;
+    cursor: default;
+}
+
+.scf-captcha .form_captcha_refresh input[type="button"] {
+    .btn;
+    .btn-default;
+}
+
+.scf-captcha .form_captcha_input input[type="text"] {
+    .form-control;
+}
+
+
+@media (min-width: @screen-lg-min) {
+  .scf-site-body-content-container {
+    width: @container-lg;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/* maximum amount of grid cells to be provided */
+@max_col: 12;
+ 
+/* default breakpoint */
+.aem-Grid {
+  .generate-grid(default, @max_col);
+}
+ 
+/* phone breakpoint */
+@media (max-width: (@screen-sm-min - 1)) {
+  .aem-Grid {
+    .generate-grid(phone, @max_col);
+  }
+}
+ 
+/* tablet breakpoint */
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+  .aem-Grid {
+    .generate-grid(tablet, @max_col);
+  }
+}
+
+/* Medium screen breakpoint */
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+  .aem-Grid {
+    .generate-grid(mediumscreen, @max_col);
+  }
+}
+
+/* Large Screen breakpoint */
+@media (min-width: @screen-lg-min) {
+  .aem-Grid {
+    .generate-grid(largescreen, @max_col);
+  }
+}

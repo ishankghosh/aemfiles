@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2014-03-04T09:58:10.968+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/libs/wcm/core/templates/designpage"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Geometrixx Gov Design"
+        sling:resourceType="wcm/core/components/designer">
+        <homepage jcr:primaryType="nt:unstructured">
+            <parsys
+                jcr:lastModified="{Date}2014-02-24T21:59:35.825+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[group:General,/apps/geometrixx-media/components/advertisement,/libs/media/articles/components/article,/apps/geometrixx-media/components/article-list,/apps/geometrixx-media/components/article-summary,/apps/geometrixx-media/components/2-col-article-summary,/apps/geometrixx-media/components/author-summary,/apps/geometrixx-media/components/carousel,/apps/geometrixx-media/components/category-title,/apps/geometrixx-media/components/social/forum/components/hbs/forum,/apps/geometrixx-media/components/social/forum/components/forum,/apps/geometrixx-media/components/list,/apps/geometrixx-media/components/social/messaging/components/category-title,/apps/geometrixx-media/components/popular-articles,/apps/geometrixx-media/components/recommended-articles,/apps/geometrixx-media/components/search-container,/apps/geometrixx-media/components/section-header,/apps/geometrixx-media/components/social/activitystreams/useractivities,/apps/geometrixx-media/components/textimage,/apps/geometrixx-media/components/top-contributors,/apps/geometrixx-media/components/welcome-message]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </parsys>
+            <parsys_left
+                jcr:lastModified="{Date}2014-02-23T08:52:11.375+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[group:General,group:Geometrixx Gov]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </parsys_left>
+            <logo
+                jcr:lastModified="{Date}2014-03-03T06:34:45.379+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/logo"
+                absParent="2"
+                imageReference="/content/dam/geometrixx-gov/logo.png"
+                imageRotate="0"
+                maxWidth="225"/>
+        </homepage>
+        <contentpage jcr:primaryType="nt:unstructured">
+            <par
+                jcr:lastModified="{Date}2014-03-04T09:58:10.933+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[group:General,group:Document Services]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </par>
+            <logo
+                jcr:lastModified="{Date}2014-03-03T07:15:22.562+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/logo"
+                absParent="1"
+                imageReference="/content/dam/geometrixx-gov/logo.png"
+                imageRotate="0"
+                maxWidth="225"/>
+        </contentpage>
+        <enrollmentpage jcr:primaryType="nt:unstructured">
+            <logo
+                jcr:lastModified="{Date}2014-03-03T12:19:33.969+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/logo"
+                absParent="1"
+                imageReference="/content/dam/geometrixx-gov/logo.png"
+                imageRotate="0"
+                maxWidth="225"/>
+        </enrollmentpage>
+        <tabbed-enrollment-page jcr:primaryType="nt:unstructured">
+            <logo
+                jcr:lastModified="{Date}2014-03-03T12:19:33.969+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/logo"
+                absParent="1"
+                imageReference="/content/dam/geometrixx-gov/logo.png"
+                imageRotate="0"
+                maxWidth="225"/>
+        </tabbed-enrollment-page>
+        <services-contentpage jcr:primaryType="nt:unstructured">
+            <logo
+                jcr:lastModified="{Date}2014-03-03T12:19:33.969+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/logo"
+                absParent="1"
+                imageReference="/content/dam/geometrixx-gov/logo.png"
+                imageRotate="0"
+                maxWidth="225"/>
+        </services-contentpage>
+    </jcr:content>
+    <clientlibs/>
+    <fp/>
+    <images/>
+    <draftsAndSubmissions.css/>
+    <form_portal_default.css/>
+    <static.css/>
+    <survey-form.css/>
+</jcr:root>

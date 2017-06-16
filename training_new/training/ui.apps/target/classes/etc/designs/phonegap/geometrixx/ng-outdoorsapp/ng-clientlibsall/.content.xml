@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:ClientLibraryFolder"
+    categories="[apps.geometrixx-outdoors-app.angular.all]"
+    dependencies="[topcoat]"
+    embed="[cq.mobileapps,cq.mobile.foundation.angular,cq.mobile.content-sync-2,cq.mobile.user,cq.mobile.core.components.angular,cq.mobile.maps.angular,cq.mobile.toast.angular,apps.geometrixx-outdoors-app.angular,swipe.js,cq.mobile.reviews,cq.mobile.push,cq.mobile.push.amazon]"/>

@@ -1,0 +1,125 @@
+/** Breadcrumbs Facet */
+
+.cq-searchpromote-breadcrumbs {
+    height: 20px;
+    background: #9d9d9d;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -o-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 11px;
+    line-height: 20px;
+    padding-left: 11px;
+}
+
+.cq-searchpromote-breadcrumbs .infix-delimiter {
+    color: #d3d3d3;
+}
+
+.cq-searchpromote-breadcrumbs a,
+.cq-searchpromote-breadcrumbs a:visited {
+    color: #E6E6E6;
+    text-decoration: none;
+}
+.cq-searchpromote-breadcrumbs a:hover {
+    color: #FFFFFF;
+}
+
+/** Color Facet */
+
+.cq-searchpromote-colors-zone {
+    border: 1px solid #d3d3d3;
+}
+
+.cq-searchpromote-facet-colors .selected,
+.cq-searchpromote-colors-zone:hover {
+    border: 3px solid #9d9d9d;
+    margin: -2px;
+}
+
+/** Linklist Facet */
+
+.cq-searchpromote-facet-linklist ul {
+    padding: 0;
+}
+
+.cq-searchpromote-facet-linklist a,
+.cq-searchpromote-facet-linklist a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+/** Nestedlist Facet */
+
+.cq-searchpromote-facet-nestedlist ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.cq-searchpromote-facet-nestedlist a,
+.cq-searchpromote-facet-nestedlist a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+/** Ranking facet */
+
+.cq-searchpromote-facet-star-on {
+    padding-left: 2px;
+}
+
+.cq-searchpromote-facet-star-off {
+    padding-left: 2px;
+}
+
+.cq-searchpromote-facet-ratings .undo-query a,
+.cq-searchpromote-facet-ratings .undo-query a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+.cq-searchpromote-facet-ratings .undo-query {
+    padding-left: 6px;
+}
+
+
+/** Pagination */
+
+.cq-searchpromote-pagination {
+    height: 20px;
+}
+
+.cq-searchpromote-pagination a,
+.cq-searchpromote-pagination a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+.cq-searchpromote-pagination .selected {
+    color: #a9a9a9;
+}
+
+.cq-searchpromote-pagination span.first,
+.cq-searchpromote-pagination span.last {
+    display: none;
+}
+
+/** Search */
+
+.cq-searchpromote-search form #q {
+    background: #efefef;
+    font-size: 11px;
+    border: 1px solid #acaaaa;
+
+}
+.cq-searchpromote-search #searchform input[type="submit"] {
+    background: url(../../../../../etc/designs/geometrixx-outdoors/images/page/search-icon.png) 0px 0px no-repeat;;
+    position: relative;
+    left: -30px;
+    top: 4px;
+    width: 19px;
+    height: 18px;
+    color: transparent;
+}
+.cq-searchpromote-search form #autocomplete {}
+.cq-searchpromote-search form #tntMBox {}
